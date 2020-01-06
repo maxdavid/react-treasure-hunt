@@ -1,5 +1,5 @@
 export * from './equipment'
 export * from './movements'
-export * from './player_data'
+export * from './data'
 export * from './items'
 export * from './mining'
