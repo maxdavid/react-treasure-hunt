@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
-import * as reset from './styles/reset.css';
-import * as global from './styles/global.css';
+import * as reset from './styling/reset.css';
+import * as global from './styling/global.css';
 
 import { StateProvider } from './contexts/StateProvider';
 import { initialState } from './reducers/initialState';
