@@ -57,3 +57,45 @@ export const examine = (dispatch, data) => {
       dispatch({ type: EXAMINE_ERROR, payload: err.response.message });
     });
 };
+
+export const START_NAME_CHANGE = 'START_NAME_CHANGE';
+export const NAMED_CHANGED = 'NAMED_CHANGED';
+export const NAME_CHANGE_ERROR = 'NAME_CHANGE_ERROR';
+
+/* 
+    data needs to have a name
+    {
+        "name": "[NEW NAME]"
+    }
+*/
+
+export const changeName = (dispatch, data) => {
+  dispatch({ type: START_NAME_CHANGE });
+  axiosWithAuth()
+    .post('adv/change_name/', data)
+    .then(res => {
+      console.log(res);
+      dispatch({ type: NAMED_CHANGED });
+    })
+    .catch(err => {
+      console.log('error', err.response);
+      dispatch({ type: NAME_CHANGE_ERROR, payload: err.response.message });
+    });
+};
+
+export const START_GET_BALANCE = 'START_GET_BALANCE';
+export const GOT_BALANCE = 'GOT_BALANCE';
+export const BALANCE_ERROR = 'BALANCE_ERROR';
+
+export const getBalance = dispatch => {
+  dispatch({ type: START_GET_BALANCE });
+  axiosWithAuth()
+    .post('bc/get_balance/', data)
+    .then(res => {
+      dispatch({ type: GOT_BALANCE, payload: res.data });
+    })
+    .catch(err => {
+      console.log('error', err.response);
+      dispatch({ type: BALANCE_ERROR, payload: err.response.message });
+    });
+};

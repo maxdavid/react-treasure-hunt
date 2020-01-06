@@ -14,8 +14,9 @@ export const EQUIPMENT_ERROR = 'EQUIPMENT_ERROR';
 export const wearEquipment = (dispatch, data) => {
   dispatch({ type: START_EQUIPMENT_WEAR });
   axiosWithAuth()
-    .get('adv/wear/', data)
+    .post('adv/wear/', data)
     .then(res => {
+      console.log(res);
       dispatch({ type: EQUIPMENT_WORN });
     })
     .catch(err => {
@@ -38,8 +39,9 @@ export const EQUIPMENT_ERROR = 'EQUIPMENT_ERROR';
 export const wearEquipment = (dispatch, data) => {
   dispatch({ type: START_EQUIPMENT_REMOVAL });
   axiosWithAuth()
-    .get('adv/undress/', data)
+    .post('adv/undress/', data)
     .then(res => {
+      console.log(res);
       dispatch({ type: EQUIPMENT_REMOVED });
     })
     .catch(err => {

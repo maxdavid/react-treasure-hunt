@@ -16,6 +16,7 @@ export const grabItem = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/take/', data)
     .then(res => {
+      console.log(res);
       dispatch({ type: ITEM_GRABBED });
     })
     .catch(err => {
@@ -40,6 +41,7 @@ export const dropItem = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/drop/', data)
     .then(res => {
+      console.log(res);
       dispatch({ type: ITEM_DROPPED });
     })
     .catch(err => {
@@ -53,14 +55,108 @@ export const TREASURE_SOLD = 'TREASURE_SOLD';
 export const TREASURE_SELL_ERROR = 'TREASURE_SELL_ERROR';
 
 export const sellTreasure = dispatch => {
-  dispatch({ type: START_TREASURE_SELL});
+  dispatch({ type: START_TREASURE_SELL });
   axiosWithAuth()
     .post('adv/sell/', { name: 'treasure', confirm: 'yes' })
     .then(res => {
+      console.log(res);
       dispatch({ type: TREASURE_SOLD });
     })
     .catch(err => {
       console.log('error', err.response);
       dispatch({ type: TREASURE_SELL_ERROR, payload: err.response.message });
+    });
+};
+
+export const START_PRAYER = 'START_PRAYER';
+export const PRAYER_SUCCESS = 'PRAYER_SUCCESS';
+export const PRAYER_ERROR = 'PRAYER_ERROR';
+
+export const pray = dispatch => {
+  dispatch({ type: START_PRAYER });
+  axiosWithAuth()
+    .post('adv/pray/')
+    .then(res => {
+      console.log(res);
+      dispatch({ type: PRAYER_SUCCESS });
+    })
+    .catch(err => {
+      console.log('error', err.response);
+      dispatch({ type: PRAYER_ERROR, payload: err.response.message });
+    });
+};
+
+export const START_GIVE_ITEM = 'START_GIVE_ITEM';
+export const GIVE_ITEM_SUCCESS = 'GIVE_ITEM_SUCCESS';
+export const GIVE_ITEM_ERROR = 'GIVE_ITEM_ERROR';
+
+/* 
+    data needs to have a name
+    {
+        "name": "[ITEM_NAME]"
+    }
+*/
+
+export const giveItemToGhost = (dispatch, data) => {
+  dispatch({ type: START_GIVE_ITEM });
+  axiosWithAuth()
+    .post('adv/carry/', data)
+    .then(res => {
+      console.log(res);
+      dispatch({ type: GIVE_ITEM_SUCCESS });
+    })
+    .catch(err => {
+      console.log('error', err.response);
+      dispatch({ type: GIVE_ITEM_ERROR, payload: err.response.message });
+    });
+};
+
+export const START_TAKE_ITEM = 'START_TAKE_ITEM';
+export const TAKE_ITEM_SUCCESS = 'TAKE_ITEM_SUCCESS';
+export const TAKE_ITEM_ERROR = 'TAKE_ITEM_ERROR';
+
+/* 
+    data needs to have a name
+    {
+        "name": "[ITEM_NAME]"
+    }
+*/
+
+export const takeItemFromGhost = (dispatch, data) => {
+  dispatch({ type: START_TAKE_ITEM });
+  axiosWithAuth()
+    .post('adv/receive/', data)
+    .then(res => {
+      console.log(res);
+      dispatch({ type: TAKE_ITEM_SUCCESS });
+    })
+    .catch(err => {
+      console.log('error', err.response);
+      dispatch({ type: TAKE_ITEM_ERROR, payload: err.response.message });
+    });
+};
+
+export const START_TRANSMOGRIFY = 'START_TRANSMOGRIFY';
+export const TRANSMOGRIFY_SUCCESS = 'TRANSMOGRIFY_SUCCESS';
+export const TRANSMOGRIFY_ERROR = 'TRANSMOGRIFY_ERROR';
+
+/* 
+    data needs to have a name
+    {
+        "name": "[ITEM_NAME]"
+    }
+*/
+
+export const takeItemFromGhost = (dispatch, data) => {
+  dispatch({ type: START_TRANSMOGRIFY });
+  axiosWithAuth()
+    .post('adv/transmogrify/', data)
+    .then(res => {
+      console.log(res);
+      dispatch({ type: TRANSMOGRIFY_SUCCESS });
+    })
+    .catch(err => {
+      console.log('error', err.response);
+      dispatch({ type: TRANSMOGRIFY_ERROR, payload: err.response.message });
     });
 };
