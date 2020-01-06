@@ -147,7 +147,7 @@ export const TRANSMOGRIFY_ERROR = 'TRANSMOGRIFY_ERROR';
     }
 */
 
-export const takeItemFromGhost = (dispatch, data) => {
+export const transmogrify = (dispatch, data) => {
   dispatch({ type: START_TRANSMOGRIFY });
   axiosWithAuth()
     .post('adv/transmogrify/', data)

@@ -90,7 +90,7 @@ export const BALANCE_ERROR = 'BALANCE_ERROR';
 export const getBalance = dispatch => {
   dispatch({ type: START_GET_BALANCE });
   axiosWithAuth()
-    .post('bc/get_balance/', data)
+    .post('bc/get_balance/')
     .then(res => {
       dispatch({ type: GOT_BALANCE, payload: res.data });
     })

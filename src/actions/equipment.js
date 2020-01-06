@@ -27,7 +27,6 @@ export const wearEquipment = (dispatch, data) => {
 
 export const START_EQUIPMENT_REMOVAL = 'START_EQUIPMENT_REMOVAL';
 export const EQUIPMENT_REMOVED = 'EQUIPMENT_REMOVED';
-export const EQUIPMENT_ERROR = 'EQUIPMENT_ERROR';
 
 /* 
     data needs to have a name
@@ -36,7 +35,7 @@ export const EQUIPMENT_ERROR = 'EQUIPMENT_ERROR';
     }
 */
 
-export const wearEquipment = (dispatch, data) => {
+export const removeEquipment = (dispatch, data) => {
   dispatch({ type: START_EQUIPMENT_REMOVAL });
   axiosWithAuth()
     .post('adv/undress/', data)
