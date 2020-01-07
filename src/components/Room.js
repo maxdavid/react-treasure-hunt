@@ -6,7 +6,7 @@ export const Room = props => {
     let split = coords.split(',');
     return [
       parseInt(split[0].slice(1), 10),
-      parseInt(split[1].slice(0, -1), 10)
+      parseInt(split[1].slice(0, -1), 10),
     ];
   };
 
@@ -15,13 +15,13 @@ export const Room = props => {
     return (
       <StyledRoom {...props} coords={coords} id={`room_${props.room_id}`}>
         <GridPiece visible={false} />
-        <GridPiece visible={props.n ? true : false} />
+        <GridPiece visible={props.n !== null ? true : false} />
         <GridPiece visible={false} />
-        <GridPiece visible={props.w ? true : false} />
+        <GridPiece visible={props.w !== null ? true : false} />
         <Floor player={props.player}>{props.room_id}</Floor>
-        <GridPiece visible={props.e ? true : false} />
+        <GridPiece visible={props.e !== null ? true : false} />
         <GridPiece visible={false} />
-        <GridPiece visible={props.s ? true : false} />
+        <GridPiece visible={props.s !== null ? true : false} />
         <GridPiece visible={false} />
       </StyledRoom>
     );

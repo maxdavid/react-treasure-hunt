@@ -13,11 +13,11 @@ export const ITEM_GRAB_ERROR = 'ITEM_GRAB_ERROR';
 
 export const grabItem = (dispatch, data) => {
   dispatch({ type: START_ITEM_GRAB });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/take/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: ITEM_GRABBED });
+      dispatch({ type: ITEM_GRABBED, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);
@@ -41,8 +41,7 @@ export const dropItem = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/drop/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: ITEM_DROPPED });
+      dispatch({ type: ITEM_DROPPED, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);
@@ -56,11 +55,11 @@ export const TREASURE_SELL_ERROR = 'TREASURE_SELL_ERROR';
 
 export const sellTreasure = dispatch => {
   dispatch({ type: START_TREASURE_SELL });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/sell/', { name: 'treasure', confirm: 'yes' })
     .then(res => {
-      console.log(res);
-      dispatch({ type: TREASURE_SOLD });
+      dispatch({ type: TREASURE_SOLD, payload: res.data});
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);
@@ -77,8 +76,7 @@ export const pray = dispatch => {
   axiosWithAuth()
     .post('adv/pray/')
     .then(res => {
-      console.log(res);
-      dispatch({ type: PRAYER_SUCCESS });
+      dispatch({ type: PRAYER_SUCCESS, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);
@@ -102,8 +100,7 @@ export const giveItemToGhost = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/carry/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: GIVE_ITEM_SUCCESS });
+      dispatch({ type: GIVE_ITEM_SUCCESS, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);
@@ -127,8 +124,7 @@ export const takeItemFromGhost = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/receive/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: TAKE_ITEM_SUCCESS });
+      dispatch({ type: TAKE_ITEM_SUCCESS, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);
@@ -152,8 +148,7 @@ export const transmogrify = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/transmogrify/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: TRANSMOGRIFY_SUCCESS });
+      dispatch({ type: TRANSMOGRIFY_SUCCESS, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);

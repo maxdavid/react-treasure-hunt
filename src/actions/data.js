@@ -23,10 +23,11 @@ export const STATUS_ERROR = 'STATUS_ERROR';
 
 export const checkStatus = dispatch => {
   dispatch({ type: START_STATUS_CHECK });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/status/')
     .then(res => {
       dispatch({ type: STATUS_SUCCESS, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);
@@ -47,10 +48,11 @@ export const EXAMINE_ERROR = 'EXAMINE_ERROR';
 
 export const examine = (dispatch, data) => {
   dispatch({ type: START_EXAMINE });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/examine/', data)
     .then(res => {
       dispatch({ type: EXAMINE_SUCCESS, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);

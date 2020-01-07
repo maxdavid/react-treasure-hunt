@@ -14,10 +14,11 @@ export const MOVE_ERROR = 'MOVE_ERROR';
 
 export const move = (dispatch, data) => {
   dispatch({ type: START_MOVE });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/move/', data)
     .then(res => {
       dispatch({ type: MOVE_SUCCESS, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);
