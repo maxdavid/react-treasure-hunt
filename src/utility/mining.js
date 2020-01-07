@@ -1,27 +1,30 @@
-import { axiosWithAuth } from './axiosTypes';
 import { sha256 } from 'js-sha256';
+import { sleep } from './randomWalk';
+import { getProof, mine, examine } from '../actions';
+import { shortestPath } from './shortestPath';
 
-export const mining = async () => {
-  let lastProof = await axiosWithAuth().get('bc/last_proof/');
-  let { difficulty, cooldown, proof } = lastProof.data;
-  console.log(difficulty)
-  let newProof = await proofOfWork(proof, difficulty);
-  let miningResult = await axiosWithAuth().post('bc/mine/', {
-    proof: newProof,
-  });
-  sleep(miningResult.data.cooldown);
+export const mining = async (currRoom, dispatch) => {
+  let count = 0;
+  while (true) {
+    // await shortestPath(currRoom, 55);
+    // let { description, cooldown } = await examine(dispatch, { name: 'well' });
+    // sleep(cooldown)
+    // await shortestPath(55, ls8(description));
+    let lastProof = await getProof(dispatch);
+    let { difficulty, proof } = lastProof;
+    let newProof = await proofOfWork(proof, difficulty);
+    let miningResult = await mine(dispatch, { proof: newProof });
+    ++count;
+    console.log(`${count} Lambda coin mined`);
+    sleep(miningResult.cooldown);
+  }
 };
 
 const proofOfWork = (lastProof, difficulty) => {
   let guess =
     Math.random() * (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER) +
     Number.MIN_SAFE_INTEGER;
-  let count = 0;
   while (!validProof(lastProof, guess, difficulty)) {
-    ++count;
-    if (count % 500000 === 0) {
-      console.log('still going!', count);
-    }
     guess =
       Math.random() * (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER) +
       Number.MIN_SAFE_INTEGER;
@@ -36,10 +39,7 @@ const validProof = (lastProof, guess, difficulty) => {
   return guess_target === target;
 };
 
-function sleep(seconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < seconds * 1000);
-}
+const ls8 = description => {
+    let code = description.match(/(?<=\\n\\n).*/)
+    let inputs = code.split('\n')
+};

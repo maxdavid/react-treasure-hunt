@@ -40,5 +40,7 @@ export const miningReducer = (state, { type, payload }) => {
         isLoading: false,
         errorMessage: payload,
       };
+    default:
+        return {...state}
   }
 };

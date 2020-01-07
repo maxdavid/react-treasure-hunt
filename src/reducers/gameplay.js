@@ -146,5 +146,7 @@ export const gameplayReducer = (state, { type, payload }) => {
         isLoading: false,
         errorMessage: payload
       };
+    default:
+        return {...state}
   }
 };

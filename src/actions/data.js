@@ -5,7 +5,6 @@ export const INIT_SUCCESS = 'INIT_SUCCESS';
 export const INIT_ERROR = 'INIT_ERROR';
 
 export const initGame = dispatch => {
-    console.log('here')
   dispatch({ type: START_INIT });
   axiosWithAuth()
     .get('adv/init/')
@@ -49,10 +48,11 @@ export const EXAMINE_ERROR = 'EXAMINE_ERROR';
 
 export const examine = (dispatch, data) => {
   dispatch({ type: START_EXAMINE });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/examine/', data)
     .then(res => {
       dispatch({ type: EXAMINE_SUCCESS, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);

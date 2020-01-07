@@ -2,7 +2,7 @@ import worldMap from '../components/assets/map';
 import { move, grabItem, checkStatus, sellTreasure } from '../actions';
 import { shortestPath } from './shortestPath';
 
-export const randomWalk = async (dispatch, start_room_id, start_exits) => {
+export const randomWalk = async (desiredTreasure, dispatch, start_room_id, start_exits) => {
   let room_id = start_room_id;
   let exits = start_exits;
   let treasureCount = 0;
@@ -10,11 +10,12 @@ export const randomWalk = async (dispatch, start_room_id, start_exits) => {
     let storedData = worldMap[`${room_id}`];
     let options = find_options(exits, storedData);
     let currentRoom = await traverse(options, dispatch);
+    console.log(currentRoom.cooldown)
     sleep(currentRoom.cooldown);
     room_id = currentRoom.room_id;
     exits = currentRoom.exits;
     if (currentRoom.items.length) {
-      await grabTreasure(treasureCount, dispatch, room_id);
+      await grabTreasure(desiredTreasure, treasureCount, dispatch, room_id);
     }
     if (
       ['318', '409', '431', '487', '489', '492'].includes(currentRoom.room_id)
@@ -24,11 +25,11 @@ export const randomWalk = async (dispatch, start_room_id, start_exits) => {
   }
 };
 
-async function grabTreasure(treasureCount, dispatch, room_id) {
+async function grabTreasure(desiredTreasure, treasureCount, dispatch, room_id) {
   ++treasureCount;
   let treasureGrab = await grabItem(dispatch, { name: 'treasure' });
   sleep(treasureGrab.cooldown);
-  if (treasureCount === 10) {
+  if (treasureCount >= desiredTreasure) {
     await shortestPath(room_id, 1);
     let status = await checkStatus(dispatch);
     let inventory = status.inventory.length;

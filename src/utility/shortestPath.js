@@ -1,5 +1,5 @@
 import worldMap from '../components/assets/map';
-import { axiosWithAuth } from './axiosTypes';
+import { move } from '../actions';
 
 class Queue {
   constructor() {
@@ -19,26 +19,19 @@ class Queue {
   }
 }
 
-export const shortestPath = async (currRoom, destination) => {
+export const shortestPath = async (currRoom, destination, dispatch) => {
   let path = getPath(currRoom, destination);
   path.shift();
   while (path.length) {
     let nextRoom = path.shift();
-    let newRoom = await axiosWithAuth().post('adv/move/', {
+    let newRoom = await move(dispatch, {
       direction: nextRoom[0],
       next_room_id: `${nextRoom[1]}`,
     });
-    console.log(nextRoom, newRoom.data.cooldown);
     sleep(newRoom.data.cooldown);
-    if (newRoom.data.items.length) {
-      let treasureGrab = await axiosWithAuth().post('adv/take/', {
-        name: 'treasure',
-      });
-      console.log('grabbed treasure')
-      sleep(treasureGrab.data.cooldown);
-    }
   }
-  return 
+  console.log('done');
+  return;
 };
 
 const getPath = (currRoom, destination) => {
@@ -63,6 +56,7 @@ const getPath = (currRoom, destination) => {
 };
 
 const getNeighbors = roomNumber => {
+  console.log(roomNumber);
   let roomData = worldMap[roomNumber];
   let { n, s, e, w } = roomData;
   let options = { n, s, e, w };

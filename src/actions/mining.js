@@ -13,10 +13,11 @@ export const MINE_ERROR = 'MINE_ERROR';
 
 export const mine = (dispatch, data) => {
   dispatch({ type: START_MINING });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('bc/mine/', data)
     .then(res => {
       dispatch({ type: MINE_SUCCESS, payload: res.data });
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -28,12 +29,13 @@ export const START_GETTING_PROOF = 'START_GETTING_PROOF';
 export const GOT_PROOF = 'GOT_PROOF';
 export const PROOF_ERROR = 'PROOF_ERROR';
 
-export const getProof = (dispatch) => {
+export const getProof = dispatch => {
   dispatch({ type: START_GETTING_PROOF });
-  axiosWithAuth()
+  return axiosWithAuth()
     .get('bc/last_proof/')
     .then(res => {
       dispatch({ type: GOT_PROOF, payload: res.data });
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
