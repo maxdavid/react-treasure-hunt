@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import worldMap from './assets/map';
 import { Room } from './Room';
 
 import { useStateValue } from '../hooks/useStateValue';
 import { initGame } from '../actions';
+import {randomWalk, shortestPath} from '../utility'
 
 export const Map = props => {
   const [{ gameplay }, dispatch] = useStateValue();
+  const [destinationRoom, setDestinationRoom] = useState('');
 
   useEffect(() => {
     initGame(dispatch);
@@ -16,6 +18,12 @@ export const Map = props => {
   const mapSize = props.size || '1000px';
   return (
     <StyledMap size={mapSize}>
+        <button onClick={() => randomWalk(gameplay.room_id, gameplay.exits)}>Random Walk</button>
+        <input 
+            value={destinationRoom}
+            onChange={(e) => setDestinationRoom(e.target.value)}
+        />
+        <button onClick={() => shortestPath(gameplay.room_id, +destinationRoom)}>Find Shortest Path</button>
       {Object.values(worldMap).map(room => (
         <Room
           key={room.room_id}

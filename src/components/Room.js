@@ -6,7 +6,7 @@ export const Room = props => {
     let split = coords.split(',');
     return [
       parseInt(split[0].slice(1), 10),
-      parseInt(split[1].slice(0, -1), 10)
+      parseInt(split[1].slice(0, -1), 10),
     ];
   };
 

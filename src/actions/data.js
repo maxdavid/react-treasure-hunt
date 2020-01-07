@@ -5,6 +5,7 @@ export const INIT_SUCCESS = 'INIT_SUCCESS';
 export const INIT_ERROR = 'INIT_ERROR';
 
 export const initGame = dispatch => {
+    console.log('here')
   dispatch({ type: START_INIT });
   axiosWithAuth()
     .get('adv/init/')
