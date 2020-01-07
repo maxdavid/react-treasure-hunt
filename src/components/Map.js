@@ -5,7 +5,7 @@ import { Room } from './Room';
 
 import { useStateValue } from '../hooks/useStateValue';
 import { initGame } from '../actions';
-import {randomWalk, shortestPath} from '../utility'
+import {randomWalk, shortestPath, mining} from '../utility'
 
 export const Map = props => {
   const [{ gameplay }, dispatch] = useStateValue();
@@ -24,6 +24,7 @@ export const Map = props => {
             onChange={(e) => setDestinationRoom(e.target.value)}
         />
         <button onClick={() => shortestPath(gameplay.room_id, +destinationRoom)}>Find Shortest Path</button>
+        <button onClick = {() => mining()}>Mine</button>
       {Object.values(worldMap).map(room => (
         <Room
           key={room.room_id}

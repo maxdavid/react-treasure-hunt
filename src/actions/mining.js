@@ -29,10 +29,10 @@ export const START_GETTING_PROOF = 'START_GETTING_PROOF';
 export const GOT_PROOF = 'GOT_PROOF';
 export const PROOF_ERROR = 'PROOF_ERROR';
 
-export const getProof = (dispatch, data) => {
+export const getProof = (dispatch) => {
   dispatch({ type: START_GETTING_PROOF });
   axiosWithAuth()
-    .get('bc/last_proof/', data)
+    .get('bc/last_proof/')
     .then(res => {
       console.log(res);
       dispatch({ type: GOT_PROOF, payload: res.data });
