@@ -27,7 +27,6 @@ export const Map = props => {
         />
         <button onClick={() => shortestPath(gameplay.room_id, +destinationRoom, dispatch)}>Go to chosen room</button>
         <button onClick = {() => mining(gameplay.room_id, dispatch)}>Mine Lambda Coin</button>
-        {/* <button onClick = {() => automate()}>Automate Process</button> */}
       {Object.values(worldMap).map(room => (
         <Room
           key={room.room_id}

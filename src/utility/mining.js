@@ -2,14 +2,16 @@ import { sha256 } from 'js-sha256';
 import { sleep } from './randomWalk';
 import { getProof, mine, examine } from '../actions';
 import { shortestPath } from './shortestPath';
+import { CPU } from './cpu';
 
 export const mining = async (currRoom, dispatch) => {
   let count = 0;
   while (true) {
-    // await shortestPath(currRoom, 55);
-    // let { description, cooldown } = await examine(dispatch, { name: 'well' });
-    // sleep(cooldown)
-    // await shortestPath(55, ls8(description));
+    await shortestPath(currRoom, 55, dispatch);
+    let { description, cooldown } = await examine(dispatch, { name: 'well' });
+    sleep(cooldown);
+    currRoom = ls8(description);
+    await shortestPath(55, currRoom, dispatch);
     let lastProof = await getProof(dispatch);
     let { difficulty, proof } = lastProof;
     let newProof = await proofOfWork(proof, difficulty);
@@ -24,7 +26,10 @@ const proofOfWork = (lastProof, difficulty) => {
   let guess =
     Math.random() * (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER) +
     Number.MIN_SAFE_INTEGER;
+  let count = 0;
   while (!validProof(lastProof, guess, difficulty)) {
+    count++;
+    if (count % 10000) console.log(`${count}`);
     guess =
       Math.random() * (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER) +
       Number.MIN_SAFE_INTEGER;
@@ -40,6 +45,11 @@ const validProof = (lastProof, guess, difficulty) => {
 };
 
 const ls8 = description => {
-    let code = description.match(/(?<=\\n\\n).*/)
-    let inputs = code.split('\n')
+  let code = description.match(/\d+(?=\D)/g);
+  let cpu = new CPU();
+  cpu.load(code);
+  cpu.run();
+  let message = cpu.message;
+  let room = message.match(/\d+/)[0];
+  return +room;
 };

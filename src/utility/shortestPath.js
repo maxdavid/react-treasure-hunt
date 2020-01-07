@@ -28,9 +28,8 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
       direction: nextRoom[0],
       next_room_id: `${nextRoom[1]}`,
     });
-    sleep(newRoom.data.cooldown);
+    sleep(newRoom.cooldown);
   }
-  console.log('done');
   return;
 };
 
@@ -56,7 +55,6 @@ const getPath = (currRoom, destination) => {
 };
 
 const getNeighbors = roomNumber => {
-  console.log(roomNumber);
   let roomData = worldMap[roomNumber];
   let { n, s, e, w } = roomData;
   let options = { n, s, e, w };
