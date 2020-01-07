@@ -28,8 +28,15 @@ export const shortestPath = async (currRoom, destination) => {
       direction: nextRoom[0],
       next_room_id: `${nextRoom[1]}`,
     });
-    console.log(nextRoom)
+    console.log(nextRoom);
     sleep(newRoom.data.cooldown);
+    if (newRoom.data.items.length) {
+      let treasureGrab = await axiosWithAuth().post('adv/take/', {
+        name: 'treasure',
+      });
+      console.log('grabbed treasure')
+      sleep(treasureGrab.data.cooldown);
+    }
   }
 };
 
