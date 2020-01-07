@@ -18,7 +18,7 @@ export const Room = props => {
         <GridPiece visible={props.n ? true : false} />
         <GridPiece visible={false} />
         <GridPiece visible={props.w ? true : false} />
-        <Floor>{props.room_id}</Floor>
+        <Floor player={props.player}>{props.room_id}</Floor>
         <GridPiece visible={props.e ? true : false} />
         <GridPiece visible={false} />
         <GridPiece visible={props.s ? true : false} />
@@ -34,11 +34,11 @@ export const Room = props => {
 const Floor = styled.div`
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: ${({ player }) => (player ? 'yellow' : 'blue')};
+  color: ${({ player }) => (player ? 'black' : 'white')};
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 `;
 
 const GridPiece = styled.div`

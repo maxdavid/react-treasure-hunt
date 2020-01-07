@@ -51,7 +51,7 @@ import {
   DASH_ERROR,
   START_WARP,
   WARP_SUCCESS,
-  WARP_ERROR,
+  WARP_ERROR
 } from '../actions';
 
 /* 
@@ -99,7 +99,7 @@ export const gameplayReducer = (state, { type, payload }) => {
     case START_EQUIPMENT_WEAR:
       return {
         ...state,
-        isLoading: true,
+        isLoading: true
       };
     case ITEM_GRABBED:
     case ITEM_DROPPED:
@@ -122,7 +122,7 @@ export const gameplayReducer = (state, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        ...payload,
+        ...payload
       };
     case ITEM_GRAB_ERROR:
     case ITEM_DROP_ERROR:
@@ -144,7 +144,7 @@ export const gameplayReducer = (state, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        errorMessage: payload,
+        errorMessage: payload
       };
   }
 };
