@@ -18,13 +18,14 @@ export const Map = props => {
   const mapSize = props.size || '1000px';
   return (
     <StyledMap size={mapSize}>
-        <button onClick={() => randomWalk(gameplay.room_id, gameplay.exits)}>Random Walk</button>
+        <button onClick={() => randomWalk(dispatch, gameplay.room_id, gameplay.exits)}>Find Treasure</button>
         <input 
             value={destinationRoom}
             onChange={(e) => setDestinationRoom(e.target.value)}
         />
-        <button onClick={() => shortestPath(gameplay.room_id, +destinationRoom)}>Find Shortest Path</button>
-        <button onClick = {() => mining()}>Mine</button>
+        <button onClick={() => shortestPath(gameplay.room_id, +destinationRoom)}>Go to chosen room</button>
+        <button onClick = {() => mining()}>Mine Lambda Coin</button>
+        {/* <button onClick = {() => automate()}>Automate Process</button> */}
       {Object.values(worldMap).map(room => (
         <Room
           key={room.room_id}

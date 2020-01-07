@@ -16,8 +16,7 @@ export const wearEquipment = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/wear/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: EQUIPMENT_WORN });
+      dispatch({ type: EQUIPMENT_WORN, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);
@@ -40,8 +39,7 @@ export const removeEquipment = (dispatch, data) => {
   axiosWithAuth()
     .post('adv/undress/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: EQUIPMENT_REMOVED });
+      dispatch({ type: EQUIPMENT_REMOVED, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);

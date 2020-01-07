@@ -4,6 +4,7 @@ import { sha256 } from 'js-sha256';
 export const mining = async () => {
   let lastProof = await axiosWithAuth().get('bc/last_proof/');
   let { difficulty, cooldown, proof } = lastProof.data;
+  console.log(difficulty)
   let newProof = await proofOfWork(proof, difficulty);
   let miningResult = await axiosWithAuth().post('bc/mine/', {
     proof: newProof,

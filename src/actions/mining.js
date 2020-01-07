@@ -16,8 +16,7 @@ export const mine = (dispatch, data) => {
   axiosWithAuth()
     .post('bc/mine/', data)
     .then(res => {
-      console.log(res);
-      dispatch({ type: MINE_SUCCESS });
+      dispatch({ type: MINE_SUCCESS, payload: res.data });
     })
     .catch(err => {
       console.log('error', err.response);
@@ -34,7 +33,6 @@ export const getProof = (dispatch) => {
   axiosWithAuth()
     .get('bc/last_proof/')
     .then(res => {
-      console.log(res);
       dispatch({ type: GOT_PROOF, payload: res.data });
     })
     .catch(err => {
