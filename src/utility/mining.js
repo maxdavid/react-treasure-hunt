@@ -29,7 +29,7 @@ const proofOfWork = (lastProof, difficulty) => {
   let count = 0;
   while (!validProof(lastProof, guess, difficulty)) {
     count++;
-    if (count % 25000 === 0) console.log(`${count}`);
+    if (count % 100000 === 0) console.log(`${count}`);
     guess =
       Math.random() * (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER) +
       Number.MIN_SAFE_INTEGER;
@@ -50,6 +50,7 @@ const ls8 = description => {
   cpu.load(code);
   cpu.run();
   let message = cpu.message;
+  console.log(message)
   let room = message.match(/\d+/)[0];
   return +room;
 };

@@ -39,10 +39,11 @@ export const FLYING_ERROR = 'FLYING_ERROR';
 
 export const fly = (dispatch, data) => {
   dispatch({ type: START_FLIGHT });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/fly/', data)
     .then(res => {
       dispatch({ type: FLYING_SUCCESS, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);
