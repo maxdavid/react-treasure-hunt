@@ -1,5 +1,5 @@
 import worldMap from '../components/assets/map';
-import { move } from '../actions';
+import { move, fly } from '../actions';
 
 class Queue {
   constructor() {
@@ -24,7 +24,7 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
   path.shift();
   while (path.length) {
     let nextRoom = path.shift();
-    let newRoom = await move(dispatch, {
+    let newRoom = await fly(dispatch, {
       direction: nextRoom[0],
       next_room_id: `${nextRoom[1]}`,
     });

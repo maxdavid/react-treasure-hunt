@@ -245,7 +245,7 @@ export class CPU {
       } else if (IR === 'HLT') halted = true;
       else if (IR === 'NOP') continue;
       else {
-        console.log('Unknown instruction');
+        console.log('Unknown instruction', IR);
         halted = true;
       }
     }
