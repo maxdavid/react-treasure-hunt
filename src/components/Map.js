@@ -24,7 +24,8 @@ export const Map = props => {
   }, [dispatch]);
 
   const mapSize = props.size || '1000px';
-  let currentMap = gameplay.room_id < 500 === 'light' ? worldMap : darkWorld;
+  let currentMap = gameplay.room_id < 500 ? worldMap : darkWorld;
+  let reason = gameplay.room_id < 500 ? 'mining' : 'snitching'
 
   return (
     <StyledMap size={mapSize}>
@@ -52,7 +53,7 @@ export const Map = props => {
       />
       <button
         onClick={() =>
-          shortestPath(gameplay.room_id, +destinationRoom, dispatch)
+          shortestPath(gameplay.room_id, +destinationRoom, dispatch, reason )
         }
       >
         Go to chosen room
