@@ -24,10 +24,19 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
   path.shift();
   while (path.length) {
     let nextRoom = path.shift();
-    let newRoom = await fly(dispatch, {
-      direction: nextRoom[0],
-      next_room_id: `${nextRoom[1]}`
-    });
+    let terrain = worldMap[nextRoom[1]].terrain;
+    let newRoom = null
+    if (terrain === 'CAVE') {
+      newRoom = await move(dispatch, {
+        direction: nextRoom[0],
+        next_room_id: `${nextRoom[1]}`,
+      });
+    } else {
+      newRoom = await fly(dispatch, {
+        direction: nextRoom[0],
+        next_room_id: `${nextRoom[1]}`,
+      });
+    }
     console.log(newRoom.messages, 'cooldown:', newRoom.cooldown);
     sleep(newRoom.cooldown);
   }

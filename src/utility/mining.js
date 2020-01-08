@@ -17,8 +17,12 @@ export const mining = async (currRoom, dispatch) => {
     let { difficulty, proof } = lastProof;
     let newProof = await proofOfWork(proof, difficulty);
     let miningResult = await mine(dispatch, { proof: newProof });
-    ++count;
-    console.log(`${count} Lambda coin mined`);
+    if(miningResult.errors && miningResult.errors.includes("Proof already submitted: +10s CD"))
+        console.log("Someone beat you to that coin!")
+    else{
+        ++count;
+        console.log(`${count} Lambda coin mined`);
+    }
     sleep(miningResult.cooldown);
   }
 };

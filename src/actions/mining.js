@@ -22,6 +22,7 @@ export const mine = (dispatch, data) => {
     .catch(err => {
       console.log('error', err.response);
       dispatch({ type: MINE_ERROR, payload: err.response.message });
+      return err.response.data
     });
 };
 
