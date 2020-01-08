@@ -84,12 +84,13 @@ export const WARP_ERROR = 'WARP_ERROR';
 
 export const warp = dispatch => {
   dispatch({ type: START_WARP });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/warp/')
     .then(res => {
       if (res.data.room_id > 500) {
-        console.log('warped to dark world...');
-      } else console.log('warped to light world...');
+        console.log('warped to dark world...', 'cooldown:', res.data.cooldown);
+      } else
+        console.log('warped to light world...', 'cooldown:', res.data.cooldown);
       dispatch({ type: WARP_SUCCESS, payload: res.data });
       return res.data;
     })
