@@ -1,5 +1,5 @@
 import { sleep } from './randomWalk';
-import { grabItem, examine, warp } from '../actions';
+import { grabItem, examine } from '../actions';
 import { shortestPath } from './shortestPath';
 import { CPU } from './cpu';
 
@@ -7,25 +7,16 @@ export const snitching = async (currRoom, dispatch) => {
   let count = 0;
 
   while (true) {
-    await shortestPath(currRoom, 55, dispatch);
-    let warpRes = await warp(dispatch); // to dark world
-    sleep(warpRes.cooldown);
+    await shortestPath(currRoom, 555, dispatch, 'snitching');
     let { description, cooldown } = await examine(dispatch, { name: 'well' });
     sleep(cooldown);
-    currRoom = ls8(description) - 500;
-    warpRes = await warp(dispatch); // to light world
-    sleep(warpRes.cooldown);
-    await shortestPath(55, currRoom, dispatch);
-    warpRes = await warp(dispatch); // to dark world
-    sleep(warpRes.cooldown);
-
+    let destination = ls8(description);
+    await shortestPath(555, destination, dispatch, 'snitching');
     let snitchGrab = await grabItem(dispatch, { name: 'golden snitch' });
+    sleep(snitchGrab.cooldown);
     ++count;
     console.log(`${count} golden snitches found`);
-    sleep(snitchGrab.cooldown);
-
-    warpRes = await warp(dispatch); // to light world
-    sleep(warpRes.cooldown);
+    currRoom = destination
   }
 };
 
