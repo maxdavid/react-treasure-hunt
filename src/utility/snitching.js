@@ -19,7 +19,7 @@ export const snitching = async (currRoom, dispatch) => {
     warpRes = await warp(dispatch); // to dark world
     sleep(warpRes.cooldown);
 
-    let snitchGrab = grabItem(dispatch, { name: 'golden snitch' });
+    let snitchGrab = await grabItem(dispatch, { name: 'golden snitch' });
     ++count;
     console.log(`${count} golden snitches found`);
     sleep(snitchGrab.cooldown);
