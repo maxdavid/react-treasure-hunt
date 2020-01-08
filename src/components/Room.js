@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { shortestPath } from '../utility';
+import { useStateValue } from '../hooks/useStateValue';
 
 export const Room = props => {
+  const [{ gameplay }, dispatch] = useStateValue();
   const splitCoords = coords => {
     let split = coords.split(',');
     return [
@@ -13,7 +16,14 @@ export const Room = props => {
   if (props.coordinates) {
     const coords = splitCoords(props.coordinates);
     return (
-      <StyledRoom {...props} coords={coords} id={`room_${props.room_id}`}>
+      <StyledRoom
+        {...props}
+        coords={coords}
+        id={`room_${props.room_id}`}
+        onClick={() =>
+          shortestPath(gameplay.room_id, props.room_id, dispatch, props.reason)
+        }
+      >
         <GridPiece visible={false} />
         <GridPiece visible={'n' in props && props.n !== null ? true : false} />
         <GridPiece visible={false} />
@@ -39,6 +49,7 @@ const Floor = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;
 
 const GridPiece = styled.div`
