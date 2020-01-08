@@ -6,10 +6,11 @@ export const INIT_ERROR = 'INIT_ERROR';
 
 export const initGame = dispatch => {
   dispatch({ type: START_INIT });
-  axiosWithAuth()
+  return axiosWithAuth()
     .get('adv/init/')
     .then(res => {
       dispatch({ type: INIT_SUCCESS, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);

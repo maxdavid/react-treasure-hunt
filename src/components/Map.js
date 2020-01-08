@@ -5,7 +5,13 @@ import { Room } from './Room';
 
 import { useStateValue } from '../hooks/useStateValue';
 import { initGame } from '../actions';
-import { randomWalk, shortestPath, mining, snitching } from '../utility';
+import {
+  randomWalk,
+  shortestPath,
+  mining,
+  snitching,
+  makeGraph,
+} from '../utility';
 
 export const Map = props => {
   const [{ gameplay }, dispatch] = useStateValue();
@@ -19,6 +25,7 @@ export const Map = props => {
   const mapSize = props.size || '1000px';
   return (
     <StyledMap size={mapSize}>
+      <button onClick={() => makeGraph(dispatch)}>Make Graph</button>
       <input
         value={desiredTreasure}
         onChange={e => setDesiredTreasure(e.target.value)}

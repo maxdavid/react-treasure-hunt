@@ -52,6 +52,7 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
         });
       }
     }
+    console.log(newRoom.messages, 'cooldown:', newRoom.cooldown)
     sleep(newRoom.cooldown);
     startingRoom = nextRoom;
   }
