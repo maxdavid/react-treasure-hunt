@@ -18,7 +18,7 @@ export const move = (dispatch, data) => {
     .post('adv/move/', data)
     .then(res => {
       dispatch({ type: MOVE_SUCCESS, payload: res.data });
-      return res.data
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -43,7 +43,7 @@ export const fly = (dispatch, data) => {
     .post('adv/fly/', data)
     .then(res => {
       dispatch({ type: FLYING_SUCCESS, payload: res.data });
-      return res.data
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -87,7 +87,11 @@ export const warp = dispatch => {
   axiosWithAuth()
     .post('adv/warp/')
     .then(res => {
+      if (res.data.room_id > 500) {
+        console.log('warped to dark world...');
+      } else console.log('warped to light world...');
       dispatch({ type: WARP_SUCCESS, payload: res.data });
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);

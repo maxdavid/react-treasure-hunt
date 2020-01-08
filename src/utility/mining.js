@@ -6,6 +6,7 @@ import { CPU } from './cpu';
 
 export const mining = async (currRoom, dispatch) => {
   let count = 0;
+
   while (true) {
     await shortestPath(currRoom, 55, dispatch);
     let { description, cooldown } = await examine(dispatch, { name: 'well' });
@@ -50,7 +51,7 @@ const ls8 = description => {
   cpu.load(code);
   cpu.run();
   let message = cpu.message;
-  console.log(message)
+  console.log(message);
   let room = message.match(/\d+/)[0];
   return +room;
 };
