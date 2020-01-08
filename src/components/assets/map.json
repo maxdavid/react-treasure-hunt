@@ -4462,7 +4462,7 @@
     "n": null,
     "s": 387,
     "e": 281,
-    "w": null,
+    "w": 409,
     "title": "A misty room",
     "terrain": "NORMAL",
     "elevation": 0,
@@ -5751,6 +5751,20 @@
     "room_id": 408,
     "exits": ["n", "s", "w"],
     "items": ["tiny treasure"]
+  },
+  "409": {
+    "n": null,
+    "s": null,
+    "e": 317,
+    "w": null,
+    "title": "A misty room",
+    "terrain": "NORMAL",
+    "elevation": 0,
+    "coordinates": "(57,49)",
+    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+    "room_id": 409,
+    "exits": ["e"],
+    "items": ["small treasure", "tiny treasure"]
   },
   "410": {
     "n": null,
