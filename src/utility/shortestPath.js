@@ -1,5 +1,5 @@
 import worldMap from '../components/assets/map';
-import { move, fly } from '../actions';
+import { move, fly, dash } from '../actions';
 
 class Queue {
   constructor() {
@@ -21,24 +21,39 @@ class Queue {
 
 export const shortestPath = async (currRoom, destination, dispatch) => {
   let path = getPath(currRoom, destination);
-  path.shift();
+  let newRoom = null;
+  let startingRoom = path.shift();
+  let nextRoom = null;
   while (path.length) {
-    let nextRoom = path.shift();
-    let terrain = worldMap[nextRoom[1]].terrain;
-    let newRoom = null
-    if (terrain === 'CAVE') {
-      newRoom = await move(dispatch, {
-        direction: nextRoom[0],
-        next_room_id: `${nextRoom[1]}`,
+    let [newPath, dashPath, dashDirection] = dashPossible(startingRoom, [
+      ...path,
+    ]);
+    if (dashPath.length > 2) {
+      newRoom = await dash(dispatch, {
+        direction: dashDirection,
+        num_rooms: `${dashPath.length}`,
+        next_room_ids: `${dashPath}`,
       });
+      path = newPath;
+      nextRoom = ['-', dashPath[dashPath.length-1]];
     } else {
-      newRoom = await fly(dispatch, {
-        direction: nextRoom[0],
-        next_room_id: `${nextRoom[1]}`,
-      });
+      nextRoom = path.shift();
+      let terrain = worldMap[nextRoom[1]].terrain;
+
+      if (terrain === 'CAVE') {
+        newRoom = await move(dispatch, {
+          direction: nextRoom[0],
+          next_room_id: `${nextRoom[1]}`,
+        });
+      } else {
+        newRoom = await fly(dispatch, {
+          direction: nextRoom[0],
+          next_room_id: `${nextRoom[1]}`,
+        });
+      }
     }
-    console.log(newRoom.messages, 'cooldown:', newRoom.cooldown);
     sleep(newRoom.cooldown);
+    startingRoom = nextRoom;
   }
   return;
 };
@@ -82,3 +97,28 @@ function sleep(seconds) {
     currentDate = Date.now();
   } while (currentDate - date < seconds * 1000);
 }
+
+const dashPossible = (start, path) => {
+  let newPath = [...path];
+  let startingRoom = worldMap[start[1]];
+  let data = Object.entries(startingRoom);
+  let initialDirection = data.filter(point => point[1] === newPath[0][1])[0][0];
+  let dashPath = [];
+  while (newPath.length) {
+    let newRoom = newPath.shift();
+    if ([242, 302, 339, 361, 415, 422, 426, 457].includes(newRoom[1])) {
+      return [[], [], []];
+    }
+    dashPath.push(newRoom[1]);
+    if (
+      newPath.length &&
+      worldMap[newRoom[1]][initialDirection] === newPath[0][1]
+    ) {
+      continue;
+    } else {
+      break;
+    }
+  }
+
+  return [newPath, dashPath, initialDirection];
+};
