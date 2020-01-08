@@ -4,13 +4,14 @@ import worldMap from './assets/map';
 import { Room } from './Room';
 
 import { useStateValue } from '../hooks/useStateValue';
-import { initGame } from '../actions';
+import { initGame, warp } from '../actions';
 import {
   randomWalk,
   shortestPath,
   mining,
   snitching,
   makeGraph,
+  darkWorld,
 } from '../utility';
 
 export const Map = props => {
@@ -23,9 +24,12 @@ export const Map = props => {
   }, [dispatch]);
 
   const mapSize = props.size || '1000px';
+  let currentMap = gameplay.room_id < 500 === 'light' ? worldMap : darkWorld;
+
   return (
     <StyledMap size={mapSize}>
       <button onClick={() => makeGraph(dispatch)}>Make Graph</button>
+      <button onClick={() => warp(dispatch)}>Warp</button>
       <input
         value={desiredTreasure}
         onChange={e => setDesiredTreasure(e.target.value)}
@@ -59,7 +63,7 @@ export const Map = props => {
       <button onClick={() => snitching(gameplay.room_id, dispatch)}>
         Find Golden Snitches
       </button>
-      {Object.values(worldMap).map(room => (
+      {Object.values(currentMap).map(room => (
         <Room
           key={room.room_id}
           mapSize={props.size}

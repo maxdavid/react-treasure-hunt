@@ -25,8 +25,10 @@ export const makeGraph = async dispatch => {
   let room = await initGame(dispatch);
   sleep(room.cooldown);
   while (Object.keys(graph).length < 500) {
-    if(Object.keys(graph).length %10 === 0)
-        console.log(graph)
+    if(Object.keys(graph).length % 10 === 0){
+        console.log(Object.keys(graph).length)
+        console.log(JSON.stringify(graph))
+    }
     if (!(room.room_id in graph)) storeRoom(room, graph);
     let options = findOptions(room, graph);
     if (options.length > 0)
@@ -37,6 +39,7 @@ export const makeGraph = async dispatch => {
     }
   }
   console.log(graph);
+  console.log(JSON.stringify(graph))
 };
 
 const traverse = async (options, room, graph, dispatch) => {

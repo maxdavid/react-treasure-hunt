@@ -1,4 +1,5 @@
 import worldMap from '../components/assets/map';
+import { darkWorld } from './darkWorld';
 import { move, fly, dash } from '../actions';
 
 class Queue {
@@ -19,15 +20,24 @@ class Queue {
   }
 }
 
-export const shortestPath = async (currRoom, destination, dispatch) => {
-  let path = getPath(currRoom, destination);
+export const shortestPath = async (
+  currRoom,
+  destination,
+  dispatch,
+  reason = 'mining'
+) => {
+  let map = reason === 'snitching' ? darkWorld : worldMap;
+  let path = getPath(currRoom, destination, map);
   let newRoom = null;
   let startingRoom = path.shift();
   let nextRoom = null;
+
   while (path.length) {
-    let [newPath, dashPath, dashDirection] = dashPossible(startingRoom, [
-      ...path,
-    ]);
+    let [newPath, dashPath, dashDirection] = dashPossible(
+      startingRoom,
+      [...path],
+      map
+    );
     if (dashPath.length > 2) {
       newRoom = await dash(dispatch, {
         direction: dashDirection,
@@ -35,10 +45,10 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
         next_room_ids: `${dashPath}`,
       });
       path = newPath;
-      nextRoom = ['-', dashPath[dashPath.length-1]];
+      nextRoom = ['-', dashPath[dashPath.length - 1]];
     } else {
       nextRoom = path.shift();
-      let terrain = worldMap[nextRoom[1]].terrain;
+      let terrain = map[nextRoom[1]].terrain;
 
       if (terrain === 'CAVE') {
         newRoom = await move(dispatch, {
@@ -52,14 +62,14 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
         });
       }
     }
-    console.log(newRoom.messages, 'cooldown:', newRoom.cooldown)
+    console.log(newRoom.messages, 'cooldown:', newRoom.cooldown);
     sleep(newRoom.cooldown);
     startingRoom = nextRoom;
   }
   return;
 };
 
-const getPath = (currRoom, destination) => {
+const getPath = (currRoom, destination, map) => {
   let queue = new Queue();
   let visited = new Set();
   queue.enqueue([['-', currRoom]]);
@@ -71,7 +81,7 @@ const getPath = (currRoom, destination) => {
     }
     if (!visited.has(lastRoom)) {
       visited.add(lastRoom);
-      let neighbors = getNeighbors(lastRoom);
+      let neighbors = getNeighbors(lastRoom, map);
       for (let room of neighbors) {
         let newPath = [...path, room];
         queue.enqueue(newPath);
@@ -80,13 +90,14 @@ const getPath = (currRoom, destination) => {
   }
 };
 
-const getNeighbors = roomNumber => {
-  let roomData = worldMap[roomNumber];
+const getNeighbors = (roomNumber, map) => {
+  let roomData = map[roomNumber];
   let { n, s, e, w } = roomData;
   let options = { n, s, e, w };
   let neighbors = [];
   for (let opt in options) {
-    if (options[opt] !== null) neighbors.push([opt, options[opt]]);
+    if (options[opt] !== null && options[opt])
+      neighbors.push([opt, options[opt]]);
   }
   return neighbors;
 };
@@ -99,9 +110,9 @@ function sleep(seconds) {
   } while (currentDate - date < seconds * 1000);
 }
 
-const dashPossible = (start, path) => {
+const dashPossible = (start, path, map) => {
   let newPath = [...path];
-  let startingRoom = worldMap[start[1]];
+  let startingRoom = map[start[1]];
   let data = Object.entries(startingRoom);
   let initialDirection = data.filter(point => point[1] === newPath[0][1])[0][0];
   let dashPath = [];
@@ -111,10 +122,7 @@ const dashPossible = (start, path) => {
       return [[], [], []];
     }
     dashPath.push(newRoom[1]);
-    if (
-      newPath.length &&
-      worldMap[newRoom[1]][initialDirection] === newPath[0][1]
-    ) {
+    if (newPath.length && map[newRoom[1]][initialDirection] === newPath[0][1]) {
       continue;
     } else {
       break;
