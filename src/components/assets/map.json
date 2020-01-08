@@ -3951,7 +3951,7 @@
   },
   "281": {
     "n": 228,
-    "s": null,
+    "s": 318,
     "e": 309,
     "w": 317,
     "title": "A misty room",
@@ -4471,6 +4471,20 @@
     "room_id": 317,
     "exits": ["s", "e", "w"],
     "items": []
+  },
+  "318": {
+    "n": 281,
+    "s": 487,
+    "e": null,
+    "w": null,
+    "title": "A misty room",
+    "terrain": "NORMAL",
+    "elevation": 0,
+    "coordinates": "(59,48)",
+    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+    "room_id": 318,
+    "exits": ["n", "s"],
+    "items": ["tiny treasure"]
   },
   "319": {
     "n": 359,
@@ -6867,6 +6881,20 @@
     "exits": ["n"],
     "items": ["tiny treasure"]
   },
+  "487": {
+    "n": 318,
+    "s": 489,
+    "e": null,
+    "w": null,
+    "title": "A misty room",
+    "terrain": "NORMAL",
+    "elevation": 0,
+    "coordinates": "(59,47)",
+    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+    "room_id": 487,
+    "exits": ["n", "s"],
+    "items": ["tiny treasure"]
+  },
   "488": {
     "n": 412,
     "s": null,
@@ -6880,6 +6908,20 @@
     "room_id": 488,
     "exits": ["n"],
     "items": ["shiny treasure", "small treasure", "small treasure"]
+  },
+  "489": {
+    "n": 487,
+    "s": null,
+    "e": null,
+    "w": null,
+    "title": "A misty room",
+    "terrain": "NORMAL",
+    "elevation": 0,
+    "coordinates": "(59,46)",
+    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+    "room_id": 489,
+    "exits": ["n"],
+    "items": ["tiny treasure"]
   },
   "490": {
     "n": null,
