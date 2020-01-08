@@ -67,10 +67,11 @@ export const DASH_ERROR = 'DASH_ERROR';
 
 export const dash = (dispatch, data) => {
   dispatch({ type: START_DASH });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/dash/', data)
     .then(res => {
       dispatch({ type: DASH_SUCCESS, payload: res.data });
+      return res.data
     })
     .catch(err => {
       console.log('error', err.response);
