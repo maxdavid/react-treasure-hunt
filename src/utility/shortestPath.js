@@ -28,7 +28,7 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
       direction: nextRoom[0],
       next_room_id: `${nextRoom[1]}`
     });
-    // console.log(newRoom.messages, 'cooldown:', newRoom.cooldown);
+    console.log(newRoom.messages, 'cooldown:', newRoom.cooldown);
     sleep(newRoom.cooldown);
   }
   return;
