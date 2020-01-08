@@ -26,8 +26,9 @@ export const shortestPath = async (currRoom, destination, dispatch) => {
     let nextRoom = path.shift();
     let newRoom = await fly(dispatch, {
       direction: nextRoom[0],
-      next_room_id: `${nextRoom[1]}`,
+      next_room_id: `${nextRoom[1]}`
     });
+    // console.log(newRoom.messages, 'cooldown:', newRoom.cooldown);
     sleep(newRoom.cooldown);
   }
   return;
