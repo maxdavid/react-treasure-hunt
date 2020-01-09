@@ -1,8 +1,13 @@
 import worldMap from '../components/assets/map';
-import { move, grabItem, checkStatus, sellTreasure } from '../actions';
+import { move, grabItem } from '../actions';
 import { shortestPath } from './shortestPath';
 
-export const randomWalk = async (desiredTreasure, dispatch, start_room_id, start_exits) => {
+export const randomWalk = async (
+  desiredTreasure,
+  dispatch,
+  start_room_id,
+  start_exits
+) => {
   let room_id = start_room_id;
   let exits = start_exits;
   let treasureCount = 0;
@@ -38,7 +43,7 @@ async function grabTreasure(desiredTreasure, treasureCount, dispatch, room_id) {
     //   inventory--;
     // }
   }
-  return
+  return;
 }
 
 function find_options(exits, data) {
