@@ -61,6 +61,7 @@ const PlayerInfo = () => {
 
   return (
     <StyledPlayerInfo>
+      <h3>{gameplay.name}</h3>
       <PlayerProperty>Lambda Coins</PlayerProperty>
       <PlayerValue>{gameplay.coins}</PlayerValue>
       <PlayerProperty>Golden Snitches</PlayerProperty>
@@ -76,6 +77,10 @@ const StyledPlayerInfo = styled.div`
   color: ${({ theme }) => theme.lightGray};
   font-size: 1.4rem;
   margin: 5px 20px;
+
+  h3 {
+    color: ${({ theme }) => theme.darkAccent};
+  }
 `;
 
 const PlayerProperty = styled.div`

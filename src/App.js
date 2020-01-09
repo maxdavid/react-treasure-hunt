@@ -1,8 +1,14 @@
-import React from 'react';
-import { Map, Dashboard, Header } from './components';
+import React, { useState } from 'react';
+import { Map, ClassicMap, Dashboard, Header } from './components';
 
 function App() {
-  return (
+  const [classic, setClassic] = useState(false);
+
+  return classic ? (
+    <div className='App'>
+      <ClassicMap size='1500px' />
+    </div>
+  ) : (
     <div className='App'>
       <Header />
       <Dashboard />
