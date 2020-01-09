@@ -13,17 +13,25 @@ export const mining = async (currRoom, dispatch) => {
     sleep(cooldown);
     currRoom = ls8(description);
     await shortestPath(55, currRoom, dispatch);
-    let lastProof = await getProof(dispatch);
-    let { difficulty, proof } = lastProof;
-    let newProof = await proofOfWork(proof, difficulty);
-    let miningResult = await mine(dispatch, { proof: newProof });
-    if(miningResult.errors && miningResult.errors.includes("Proof already submitted: +10s CD"))
-        console.log("Someone beat you to that coin!")
-    else{
+    while (true) {
+      let lastProof = await getProof(dispatch);
+      let { difficulty, proof } = lastProof;
+      let newProof = await proofOfWork(proof, difficulty);
+      if (newProof === 'restart') continue;
+      let miningResult = await mine(dispatch, { proof: newProof });
+      if (
+        miningResult.errors &&
+        miningResult.errors.includes('Proof already submitted: +10s CD')
+      ) {
+        console.log('Someone beat you to that coin!');
+        sleep(miningResult.cooldown);
+      } else {
         ++count;
         console.log(`${count} Lambda coin mined`);
+        sleep(miningResult.cooldown);
+        break;
+      }
     }
-    sleep(miningResult.cooldown);
   }
 };
 
@@ -34,7 +42,8 @@ const proofOfWork = (lastProof, difficulty) => {
   let count = 0;
   while (!validProof(lastProof, guess, difficulty)) {
     count++;
-    if (count % 100000 === 0) console.log(`${count}`);
+    if (count % 1000000 === 0) console.log(`${count}`);
+    if (count > 10000000) return 'restart';
     guess =
       Math.random() * (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER) +
       Number.MIN_SAFE_INTEGER;

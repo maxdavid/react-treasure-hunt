@@ -27,6 +27,7 @@ export const Map = props => {
     <StyledMap size={mapSize}>
       {Object.values(currentMap).map(room => (
         <Room
+          reason={reason}
           key={room.room_id}
           mapSize={props.size}
           player={gameplay.room_id === room.room_id}
