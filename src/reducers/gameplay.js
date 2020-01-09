@@ -51,7 +51,8 @@ import {
   DASH_ERROR,
   START_WARP,
   WARP_SUCCESS,
-  WARP_ERROR
+  WARP_ERROR,
+  SET_COOLDOWN_LOCK
 } from '../actions';
 
 /* 
@@ -119,6 +120,7 @@ export const gameplayReducer = (state, { type, payload }) => {
     case FLYING_SUCCESS:
     case DASH_SUCCESS:
     case WARP_SUCCESS:
+    case SET_COOLDOWN_LOCK:
       return {
         ...state,
         isLoading: false,
@@ -147,6 +149,6 @@ export const gameplayReducer = (state, { type, payload }) => {
         errorMessage: payload
       };
     default:
-        return {...state}
+      return { ...state };
   }
 };

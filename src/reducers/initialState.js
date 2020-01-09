@@ -12,12 +12,18 @@ export const initialState = {
     strength: 10, //How much can you carry?
     speed: 10, //How fast do you travel?
     gold: 0,
+    elevation: 0,
+    terrain: 'NORMAL',
     bodywear: 'None',
     footwear: 'None',
     inventory: [],
     status: [],
     isLoading: false,
-    errorMessage: ''
+    errorMessage: '',
+    dimension: 'light',
+    coins: 0,
+    snitches: 0,
+    cooldownLock: false
   },
   mining: {
     proof: '',
