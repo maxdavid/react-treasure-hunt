@@ -71,7 +71,7 @@ export const dash = (dispatch, data) => {
     .post('adv/dash/', data)
     .then(res => {
       dispatch({ type: DASH_SUCCESS, payload: res.data });
-      return res.data
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -90,8 +90,11 @@ export const warp = dispatch => {
     .then(res => {
       if (res.data.room_id > 500) {
         console.log('warped to dark world...', 'cooldown:', res.data.cooldown);
-      } else
+        res.data.dimension = 'dark';
+      } else {
         console.log('warped to light world...', 'cooldown:', res.data.cooldown);
+        res.data.dimension = 'light';
+      }
       dispatch({ type: WARP_SUCCESS, payload: res.data });
       return res.data;
     })

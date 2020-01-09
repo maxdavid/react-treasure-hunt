@@ -10,7 +10,7 @@ export const initGame = dispatch => {
     .get('adv/init/')
     .then(res => {
       dispatch({ type: INIT_SUCCESS, payload: res.data });
-      return res.data
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -28,7 +28,7 @@ export const checkStatus = dispatch => {
     .post('adv/status/')
     .then(res => {
       dispatch({ type: STATUS_SUCCESS, payload: res.data });
-      return res.data
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -53,7 +53,7 @@ export const examine = (dispatch, data) => {
     .post('adv/examine/', data)
     .then(res => {
       dispatch({ type: EXAMINE_SUCCESS, payload: res.data });
-      return res.data
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -92,13 +92,21 @@ export const BALANCE_ERROR = 'BALANCE_ERROR';
 
 export const getBalance = dispatch => {
   dispatch({ type: START_GET_BALANCE });
-  axiosWithAuth()
-    .post('bc/get_balance/')
+  return axiosWithAuth()
+    .get('bc/get_balance/')
     .then(res => {
+      res.data.coins = res.data.messages[0].match(/(\d+)\./)[1];
       dispatch({ type: GOT_BALANCE, payload: res.data });
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
       dispatch({ type: BALANCE_ERROR, payload: err.response.message });
     });
+};
+
+export const SET_COOLDOWN_LOCK = 'SET_COOLDOWN_LOCK';
+
+export const setCooldownLock = (lock, dispatch) => {
+  dispatch({ type: SET_COOLDOWN_LOCK, payload: { cooldownLock: lock } });
 };

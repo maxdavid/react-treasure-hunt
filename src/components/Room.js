@@ -6,7 +6,7 @@ export const Room = props => {
     let split = coords.split(',');
     return [
       parseInt(split[0].slice(1), 10),
-      parseInt(split[1].slice(0, -1), 10),
+      parseInt(split[1].slice(0, -1), 10)
     ];
   };
 
@@ -34,8 +34,12 @@ export const Room = props => {
 const Floor = styled.div`
   width: 100%;
   height: 100%;
+  /* background-color: ${props =>
+    props.player ? 'yellow' : props.theme.darkAccent}; */
   background-color: ${({ player }) => (player ? 'yellow' : 'blue')};
   color: ${({ player }) => (player ? 'black' : 'white')};
+  font-family: ${({ theme }) => theme.mono};
+  font-weight: 300;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +48,9 @@ const Floor = styled.div`
 const GridPiece = styled.div`
   width: 100%;
   height: 100%;
-  background-color: ${props => (props.visible ? 'lightblue' : 'transparent')};
+  /* background-color: ${props =>
+    props.visible ? props.theme.lightAccent : 'transparent'}; */
+  background-color: ${({ visible }) => (visible ? 'lightblue' : 'transparent')};
 `;
 
 const StyledRoom = styled.div`
