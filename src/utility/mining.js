@@ -34,7 +34,7 @@ const proofOfWork = (lastProof, difficulty) => {
   let count = 0;
   while (!validProof(lastProof, guess, difficulty)) {
     count++;
-    if (count % 100000 === 0) console.log(`${count}`);
+    if (count % 1000000 === 0) console.log(`${count}`);
     guess =
       Math.random() * (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER) +
       Number.MIN_SAFE_INTEGER;

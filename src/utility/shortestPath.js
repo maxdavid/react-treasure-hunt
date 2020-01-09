@@ -96,7 +96,7 @@ const getNeighbors = (roomNumber, map) => {
   let options = { n, s, e, w };
   let neighbors = [];
   for (let opt in options) {
-    if (options[opt] !== null && options[opt])
+    if (options[opt] !== undefined && options[opt] !== null)
       neighbors.push([opt, options[opt]]);
   }
   return neighbors;
