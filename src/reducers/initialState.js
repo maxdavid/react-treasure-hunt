@@ -1,6 +1,7 @@
 export const initialState = {
   gameplay: {
     room_id: 0,
+    name: 'PLAYER NAME',
     title: 'A Dark Room',
     description: 'You cannot see anything.',
     coordinates: '(60, 60)',
@@ -23,7 +24,8 @@ export const initialState = {
     dimension: 'light',
     coins: 0,
     snitches: 0,
-    cooldownLock: false
+    cooldownLock: false,
+    processingAction: false
   },
   mining: {
     proof: '',
