@@ -16,7 +16,6 @@ export const Dashboard = () => {
   useEffect(() => {
     getPlayerInfo(dispatch);
   }, [dispatch]);
-
   return (
     <StyledDashboard>
       <ControlModules>
