@@ -14,10 +14,14 @@ export const snitching = async (currRoom, dispatch) => {
     await shortestPath(555, destination, dispatch, 'snitching');
     let snitchGrab = await grabItem(dispatch, { name: 'golden snitch' });
     sleep(snitchGrab.cooldown);
-    ++count;
-    dispatch({type:"increment snitch count"})
-    console.log(`${count} golden snitches found`);
-    currRoom = destination
+    if (snitchGrab.errors.length > 0) {
+      console.log('Snitch was gone!');
+    } else {
+      ++count;
+      dispatch({ type: 'increment snitch count' });
+      console.log(`${count} snitches have been grabbed!`);
+    }
+    currRoom = destination;
   }
 };
 
