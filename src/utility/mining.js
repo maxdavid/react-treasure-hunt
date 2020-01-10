@@ -20,14 +20,12 @@ export const mining = async (currRoom, dispatch) => {
       let newProof = await proofOfWork(proof, difficulty);
       if (newProof === 'restart') continue;
       let miningResult = await mine(dispatch, { proof: newProof });
-      if (
-        miningResult.errors &&
-        miningResult.errors.includes('Proof already submitted: +10s CD')
-      ) {
-        console.log('Someone beat you to that coin!');
+      if (miningResult.errors.length > 0) {
+        console.log(miningResult.errors);
         sleep(miningResult.cooldown);
       } else {
         ++count;
+        dispatch({type: "increment coin count"})
         console.log(`${count} Lambda coin mined`);
         sleep(miningResult.cooldown);
         break;

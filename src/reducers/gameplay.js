@@ -101,7 +101,7 @@ export const gameplayReducer = (state, { type, payload }) => {
     case START_EQUIPMENT_WEAR:
       return {
         ...state,
-        isLoading: true
+        isLoading: true,
       };
     case ITEM_GRABBED:
     case ITEM_DROPPED:
@@ -126,7 +126,7 @@ export const gameplayReducer = (state, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        ...payload
+        ...payload,
       };
     case ITEM_GRAB_ERROR:
     case ITEM_DROP_ERROR:
@@ -148,7 +148,17 @@ export const gameplayReducer = (state, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        errorMessage: payload
+        errorMessage: payload,
+      };
+    case 'increment coin count':
+      return {
+        ...state,
+        coins: +state.coins + 1,
+      };
+    case 'increment snitch count':
+      return {
+        ...state,
+        snitches: +state.snitches + 1,
       };
     default:
       return { ...state };
