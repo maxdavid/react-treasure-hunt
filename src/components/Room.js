@@ -88,7 +88,7 @@ const Floor = styled.div`
       ? 'black'
       : 'white'};
   font-weight: 600;
-  letter-spacing: 0.05;
+  letter-spacing: 0.07rem;
   display: flex;
   justify-content: center;
   align-items: center;
