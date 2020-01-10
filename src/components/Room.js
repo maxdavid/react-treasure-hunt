@@ -68,22 +68,19 @@ export const Room = props => {
 const Floor = styled.div`
   width: 100%;
   height: 100%;
-  /* background-color: ${props =>
-    props.player ? 'yellow' : props.theme.darkAccent}; */
   background-color: ${props =>
     props.dark
       ? props.player
         ? 'blue'
         : '#ff9800CC'
-      : // : props.theme.darkerOrange
-      props.player
+      : props.player
       ? 'yellow'
       : 'blue'};
   color: ${props =>
     props.dark
       ? props.player
         ? 'white'
-        : props.theme.darkGray
+        : 'black'
       : props.player
       ? 'black'
       : 'white'};
@@ -98,14 +95,11 @@ const Floor = styled.div`
 const GridPiece = styled.div`
   width: 100%;
   height: 100%;
-  /* background-color: ${props =>
-    props.visible ? props.theme.lightAccent : 'transparent'}; */
   background-color: ${props =>
     props.dark
       ? props.visible
         ? '#ffb74dCC'
-        : // ? props.theme.mediumOrange
-          'transparent'
+        : 'transparent'
       : props.visible
       ? 'lightblue'
       : 'transparent'};
