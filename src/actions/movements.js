@@ -88,7 +88,7 @@ export const warp = dispatch => {
   return axiosWithAuth()
     .post('adv/warp/')
     .then(res => {
-      if (res.data.room_id > 500) {
+      if (res.data.room_id >= 500) {
         console.log('warped to dark world...', 'cooldown:', res.data.cooldown);
         res.data.dimension = 'dark';
       } else {

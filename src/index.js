@@ -22,6 +22,11 @@ const theme = {
   mediumGray: '#515959',
   darkAccent: '#7dcdbe',
   lightAccent: '#d3e5e6',
+  lightOrange: '#fbe8c5',
+  mediumOrange: '#f8ce85',
+  darkOrange: '#dcae5f',
+  // darkerOrange: '#c98a1d',
+  darkerOrange: '#ef6c00',
   mono: "'Source Code Pro', monospace"
 };
 
