@@ -59,11 +59,8 @@ const StyledMap = styled.div`
       props.dark ? props.theme.lightGray : props.theme.darkGray};
   }
 
-  /* background-color: ${props =>
-    props.dark ? props.theme.darkGray : 'white'}; */
-
   position: relative;
   width: 100vw;
-  height: 100vw;
+  height: 1440px;
   padding-bottom: 100vw;
 `;
