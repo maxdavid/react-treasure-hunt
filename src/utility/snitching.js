@@ -1,9 +1,10 @@
 import { sleep } from './randomWalk';
-import { grabItem, examine } from '../actions';
+import { grabItem, examine, setCurrentAction } from '../actions';
 import { shortestPath } from './shortestPath';
 import { CPU } from './cpu';
 
 export const snitching = async (currRoom, dispatch) => {
+  setCurrentAction('snitching', dispatch);
   let count = 0;
 
   while (true) {
@@ -17,7 +18,7 @@ export const snitching = async (currRoom, dispatch) => {
     ++count;
     dispatch({type:"increment snitch count"})
     console.log(`${count} golden snitches found`);
-    currRoom = destination
+    currRoom = destination;
   }
 };
 

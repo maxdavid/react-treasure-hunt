@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { shortestPath } from '../utility';
+import { setCurrentAction, setCooldownLock } from '../actions';
 import { useStateValue } from '../hooks/useStateValue';
 
 export const Room = props => {
@@ -13,6 +14,14 @@ export const Room = props => {
     ];
   };
 
+  const navigate = async (curr, dest, dispatch, reason) => {
+    setCurrentAction('navigating', dispatch);
+    setCooldownLock(true, dispatch);
+    await shortestPath(curr, dest, dispatch, reason);
+    setCooldownLock(false, dispatch);
+    setCurrentAction('idle', dispatch);
+  };
+
   if (props.coordinates) {
     const coords = splitCoords(props.coordinates);
     return (
@@ -21,7 +30,7 @@ export const Room = props => {
         coords={coords}
         id={`room_${props.room_id}`}
         onClick={() =>
-          shortestPath(gameplay.room_id, props.room_id, dispatch, props.reason)
+          navigate(gameplay.room_id, props.room_id, dispatch, props.reason)
         }
       >
         <GridPiece visible={false} />
