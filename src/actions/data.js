@@ -9,6 +9,7 @@ export const initGame = dispatch => {
   return axiosWithAuth()
     .get('adv/init/')
     .then(res => {
+      res.data.dimension = res.data.room_id >= 500 ? 'dark' : 'light';
       dispatch({ type: INIT_SUCCESS, payload: res.data });
       return res.data;
     })
@@ -27,6 +28,7 @@ export const checkStatus = dispatch => {
   return axiosWithAuth()
     .post('adv/status/')
     .then(res => {
+      res.data.player_name = res.data.name;
       dispatch({ type: STATUS_SUCCESS, payload: res.data });
       return res.data;
     })
@@ -109,4 +111,10 @@ export const SET_COOLDOWN_LOCK = 'SET_COOLDOWN_LOCK';
 
 export const setCooldownLock = (lock, dispatch) => {
   dispatch({ type: SET_COOLDOWN_LOCK, payload: { cooldownLock: lock } });
+};
+
+export const SET_CURRENT_ACTION = 'SET_CURRENT_ACTION';
+
+export const setCurrentAction = (action, dispatch) => {
+  dispatch({ type: SET_CURRENT_ACTION, payload: { currentAction: action } });
 };

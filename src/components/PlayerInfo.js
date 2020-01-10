@@ -4,7 +4,12 @@ import styled from 'styled-components';
 export const PlayerInfo = props => {
   return (
     <StyledPlayerInfo>
-      <h2>{props.name}</h2>
+      <h2>{props.player_name}</h2>
+      {props.name.match(/^User \d/) ? (
+        <Nameless>You are nameless.</Nameless>
+      ) : (
+        ''
+      )}
       <Spacer />
       <h3>
         <span>$</span>
@@ -45,6 +50,13 @@ const Spacer = styled.div`
   margin: 10px 0;
 `;
 
+const Nameless = styled.div`
+  font-weight: 300;
+  font-family: ${({ theme }) => theme.mono};
+  font-style: italic;
+  padding-bottom: 10px;
+`;
+
 const StyledPlayerInfo = styled.div`
   min-width: 250px;
   background-color: ${({ theme }) => theme.lightAccent};
@@ -52,7 +64,12 @@ const StyledPlayerInfo = styled.div`
   padding: 10px 20px;
 
   h2 {
+    display: block;
     padding: 10px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
   }
   h3 {
     padding-top: 5px;
@@ -82,5 +99,6 @@ const StatName = styled.div`
     right: 0;
     padding: 0 10px;
     height: 100%;
+    opacity: 0.3;
   }
 `;

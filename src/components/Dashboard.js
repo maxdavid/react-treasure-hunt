@@ -5,9 +5,11 @@ import { useStateValue } from '../hooks/useStateValue';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import Loader from 'react-loader-spinner';
 
-import { ActionButtons } from './ActionButtons';
+import { Action } from './Action';
 import { PlayerInfo } from './PlayerInfo';
 import { RoomInfo } from './RoomInfo';
+import { PlayerWear } from './PlayerWear';
+import { Items } from './Items';
 import { getPlayerInfo, darkWorld } from '../utility';
 
 export const Dashboard = () => {
@@ -23,20 +25,28 @@ export const Dashboard = () => {
           className={`horz-flow loading-block disabled-${gameplay.cooldownLock}`}
         >
           <Loader type='ThreeDots' color='#000' height={80} width={80} />
-          <div>LOADING PLAYER DATA...</div>
+          <div>COOLDOWN...</div>
         </div>
         <PlayerInfo {...gameplay} />
         <RoomInfo {...gameplay} />
-        <ActionButtons disabled={gameplay.cooldownLock} />
+        <PlayerWear bodywear={gameplay.bodywear} footwear={gameplay.footwear} />
+        <Items />
+        <Spacer />
+        <Action />
       </ControlModules>
       <MessagesBar className='horz-flow'>
-        {gameplay.messages.map(message => (
-          <div key={message}>{message}</div>
-        ))}
+        {gameplay.messages.map(message => {
+          if (!message.includes('Dash')) return <div>{message}</div>;
+        })}
       </MessagesBar>
     </StyledDashboard>
   );
 };
+
+const Spacer = styled.div`
+  flex-grow: 1;
+  height: 100%;
+`;
 
 const DashBar = styled.div`
   width: 100%;
@@ -45,7 +55,7 @@ const DashBar = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.lightGray};
   font-size: 1.4rem;
-  height: 30px;
+  min-height: 30px;
   color: ${({ theme }) => theme.darkGray};
   padding: 5px 0;
 `;
@@ -82,7 +92,7 @@ const StyledDashboard = styled.div`
     right: 0;
     z-index: 10;
     background-color: white;
-    opacity: 0.5;
+    opacity: 0.7;
     display: block;
     cursor: not-allowed;
 

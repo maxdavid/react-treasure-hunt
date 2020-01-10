@@ -27,10 +27,15 @@ const RoomDescription = styled.div`
   padding: 5px 0;
   font-weight: 300;
   line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 `;
 
 const StyledRoomInfo = styled.div`
-  width: 250px;
+  width: 300px;
   background-color: ${({ theme }) => theme.darkAccent};
   color: ${({ theme }) => theme.darkGray};
   padding: 10px 20px;
@@ -52,7 +57,7 @@ const StyledRoomInfo = styled.div`
 const Stats = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   padding: 10px 0;
   font-size: 1.6rem;
@@ -68,5 +73,6 @@ const StatName = styled.div`
     right: 0;
     padding: 0 10px;
     height: 100%;
+    opacity: 0.3;
   }
 `;

@@ -1,18 +1,15 @@
 import { sleep } from './randomWalk';
-import { grabItem, examine, setCurrentAction } from '../actions';
+import { grabItem, examineCheat } from '../actions';
 import { shortestPath } from './shortestPath';
 import { CPU } from './cpu';
 
-export const snitching = async (currRoom, dispatch) => {
-  setCurrentAction('snitching', dispatch);
+export const snitchCheat = async (currRoom, dispatch) => {
   let count = 0;
 
   while (true) {
-    await shortestPath(currRoom, 555, dispatch, 'snitching');
-    let { description, cooldown } = await examine(dispatch, { name: 'well' });
-    sleep(cooldown);
+    let { description } = await examineCheat(dispatch, { name: 'well' });
     let destination = ls8(description);
-    await shortestPath(555, destination, dispatch, 'snitching');
+    await shortestPath(currRoom, destination, dispatch, 'snitching');
     let snitchGrab = await grabItem(dispatch, { name: 'golden snitch' });
     sleep(snitchGrab.cooldown);
     if (snitchGrab.errors.length > 0) {

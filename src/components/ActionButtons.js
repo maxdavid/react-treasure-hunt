@@ -2,21 +2,24 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useStateValue } from '../hooks/useStateValue';
 
-import { initGame, checkStatus, examine, getBalance, warp } from '../actions';
-import {
-  randomWalk,
-  shortestPath,
-  mining,
-  snitching,
-  makeGraph,
-  darkWorld
-} from '../utility';
+import { sleep } from '../utility/randomWalk';
+import { warp, setCooldownLock, setCurrentAction } from '../actions';
+import { mining, snitching, darkWorld } from '../utility';
 
 export const ActionButtons = props => {
   const [{ gameplay }, dispatch] = useStateValue();
   const [destinationRoom, setDestinationRoom] = useState('');
   const [desiredTreasure, setDesiredTreasure] = useState('');
   let reason = gameplay.room_id < 500 ? 'mining' : 'snitching';
+
+  const warpCooldown = async dispatch => {
+    setCooldownLock(true, dispatch);
+    setCurrentAction('warping', dispatch);
+    const { cooldown } = await warp(dispatch);
+    sleep(cooldown);
+    setCooldownLock(false, dispatch);
+    setCurrentAction('idle', dispatch);
+  };
 
   return (
     <StyledActionButtons>
@@ -48,11 +51,22 @@ export const ActionButtons = props => {
       >
         Go to chosen room
       </button> */}
-      <button onClick={() => warp(dispatch)}>Warp</button>
-      <button onClick={() => mining(gameplay.room_id, dispatch)}>
+      <button
+        disabled={!gameplay.abilities.includes('warp')}
+        onClick={() => warpCooldown(dispatch)}
+      >
+        Warp
+      </button>
+      <button
+        onClick={() => mining(gameplay.room_id, dispatch)}
+        disabled={gameplay.name.match(/^User \d/)}
+      >
         Mine Lambda Coins
       </button>
-      <button onClick={() => snitching(gameplay.room_id, dispatch)}>
+      <button
+        disabled={!gameplay.abilities.includes('warp')}
+        onClick={() => snitching(gameplay.room_id, dispatch)}
+      >
         Find Golden Snitches
       </button>
     </StyledActionButtons>
@@ -60,16 +74,18 @@ export const ActionButtons = props => {
 };
 
 const StyledActionButtons = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+  display: grid;
+  width: 100%;
+  height: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-gap: 5px;
 
   button {
     cursor: pointer;
     display: inline-block;
-    padding: 0.3em 1.5em;
-    margin: 0 0.3em 0.5em 0;
+    padding: 0.3em 0.5em;
+    height: 100%;
+    width: 100%;
     border-radius: 2em;
     text-decoration: none;
     color: ${({ theme }) => theme.darkGray};
@@ -79,6 +95,13 @@ const StyledActionButtons = styled.div`
     border: none;
     outline: none;
   }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    /* display: none; */
+  }
+
   button:hover {
     background-color: ${({ theme }) => theme.lightAccent};
   }

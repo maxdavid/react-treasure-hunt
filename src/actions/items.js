@@ -17,7 +17,7 @@ export const grabItem = (dispatch, data) => {
     .post('adv/take/', data)
     .then(res => {
       dispatch({ type: ITEM_GRABBED, payload: res.data });
-      return res.data
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -38,10 +38,11 @@ export const ITEM_DROP_ERROR = 'ITEM_DROP_ERROR';
 
 export const dropItem = (dispatch, data) => {
   dispatch({ type: START_ITEM_DROP });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/drop/', data)
     .then(res => {
       dispatch({ type: ITEM_DROPPED, payload: res.data });
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -58,8 +59,8 @@ export const sellTreasure = dispatch => {
   return axiosWithAuth()
     .post('adv/sell/', { name: 'treasure', confirm: 'yes' })
     .then(res => {
-      dispatch({ type: TREASURE_SOLD, payload: res.data});
-      return res.data
+      dispatch({ type: TREASURE_SOLD, payload: res.data });
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
@@ -145,10 +146,11 @@ export const TRANSMOGRIFY_ERROR = 'TRANSMOGRIFY_ERROR';
 
 export const transmogrify = (dispatch, data) => {
   dispatch({ type: START_TRANSMOGRIFY });
-  axiosWithAuth()
+  return axiosWithAuth()
     .post('adv/transmogrify/', data)
     .then(res => {
       dispatch({ type: TRANSMOGRIFY_SUCCESS, payload: res.data });
+      return res.data;
     })
     .catch(err => {
       console.log('error', err.response);
