@@ -64,7 +64,12 @@ const StyledPlayerInfo = styled.div`
   padding: 10px 20px;
 
   h2 {
+    display: block;
     padding: 10px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
   }
   h3 {
     padding-top: 5px;
