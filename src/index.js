@@ -4,6 +4,7 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 import * as reset from './styling/reset.css';
 import * as global from './styling/global.css';
+import * as balloon from './styling/balloon.css';
 
 import { StateProvider } from './contexts/StateProvider';
 import { initialState } from './reducers/initialState';
@@ -14,6 +15,7 @@ import App from './App';
 const GlobalStyle = createGlobalStyle`
     ${reset}
     ${global}
+    ${balloon}
 `;
 
 const theme = {

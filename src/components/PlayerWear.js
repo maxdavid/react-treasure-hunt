@@ -63,6 +63,35 @@ const Item = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 5px 10px;
+      content: 'Take off?';
+      display: block;
+      color: ${({ theme }) => theme.darkGray};
+      background-color: ${({ theme }) => theme.lightAccent};
+      border-radius: 10px;
+      transition: opacity 0.05s;
+      opacity: 0;
+      font-size: 1.4rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      transition: opacity 0.05s;
+    }
 
     img {
       width: 60px;

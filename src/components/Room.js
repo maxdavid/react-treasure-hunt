@@ -14,6 +14,8 @@ export const Room = props => {
     ];
   };
 
+  const specialRooms = [1, 22, 55, 374, 461, 467, 486, 495, 499];
+
   const navigate = async (curr, dest, dispatch, reason) => {
     setCurrentAction('navigating', dispatch);
     setCooldownLock(true, dispatch);
@@ -44,7 +46,14 @@ export const Room = props => {
           dark={props.dark}
           visible={'w' in props && props.w !== null ? true : false}
         />
-        <Floor dark={props.dark} player={props.player}>
+        <Floor
+          special={specialRooms.includes(props.room_id)}
+          dark={props.dark}
+          player={props.player}
+          aria-label={props.title}
+          data-balloon-pos='up'
+          data-balloon-blunt
+        >
           {props.room_id}
         </Floor>
         <GridPiece
@@ -69,7 +78,9 @@ const Floor = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${props =>
-    props.dark
+    props.special
+      ? 'gold'
+      : props.dark
       ? props.player
         ? 'blue'
         : '#ff9800CC'
@@ -77,7 +88,9 @@ const Floor = styled.div`
       ? 'yellow'
       : 'blue'};
   color: ${props =>
-    props.dark
+    props.special
+      ? props.theme.darkGray
+      : props.dark
       ? props.player
         ? 'white'
         : 'black'
@@ -90,6 +103,7 @@ const Floor = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 5;
 `;
 
 const GridPiece = styled.div`

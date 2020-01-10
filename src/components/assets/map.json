@@ -6872,11 +6872,11 @@
     "s": null,
     "e": null,
     "w": null,
-    "title": "A misty room",
+    "title": "Arron's Athenaeum",
     "terrain": "NORMAL",
     "elevation": 0,
     "coordinates": "(69,67)",
-    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+    "description": "Before you lies a radiant book of knowledge, on a pedestal inlaid with Lambda Coins. Below, a plaque reads:  Herin exists knowledge gathered by Arron of Web19/CS21. Always seek to learn. Ask questions. Don't panic, bring a towel.",
     "room_id": 486,
     "exits": ["n"],
     "items": ["tiny treasure"]

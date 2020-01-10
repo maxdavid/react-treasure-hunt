@@ -30,7 +30,6 @@ export const checkStatus = dispatch => {
     .then(res => {
       res.data.player_name = res.data.name;
       dispatch({ type: STATUS_SUCCESS, payload: res.data });
-      console.log(res.data);
       return res.data;
     })
     .catch(err => {

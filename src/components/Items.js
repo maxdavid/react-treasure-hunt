@@ -47,7 +47,19 @@ export const Items = () => {
                 {item}
               </Item>
               <div
-                className='button'
+                className={`button ${
+                  item.includes('treasure')
+                    ? 'hidden'
+                    : item.includes('jacket')
+                    ? gameplay.bodywear
+                      ? 'disabled'
+                      : ''
+                    : item.includes('boots')
+                    ? gameplay.footwear
+                      ? 'disabled'
+                      : ''
+                    : ''
+                }`}
                 onClick={() => wearEquipment(dispatch, { name: item })}
               >
                 Wear
@@ -105,6 +117,15 @@ const ItemRow = styled.div`
     &.warn {
       background-color: #f9daa3;
     }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &.hidden {
+      display: none;
+    }
   }
 `;
 
@@ -161,14 +182,14 @@ const Item = styled.div`
     text-align: center;
     padding: 5px 10px;
     content: 'Examine?';
-    display: none;
     background-color: ${({ theme }) => theme.lightAccent};
     border-radius: 10px;
-    transition: all 0.1s;
+    transition: opacity 0.05s;
+    opacity: 0;
   }
 
   &:hover::before {
-    display: block;
-    transition: all 0.1s;
+    transition: opacity 0.05s;
+    opacity: 1;
   }
 `;
