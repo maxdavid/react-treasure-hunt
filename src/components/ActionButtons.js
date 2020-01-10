@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useStateValue } from '../hooks/useStateValue';
 
 import { sleep } from '../utility/randomWalk';
-import { warp, setCooldownLock } from '../actions';
+import { warp, setCooldownLock, setCurrentAction } from '../actions';
 import { mining, snitching, darkWorld } from '../utility';
 
 export const ActionButtons = props => {
@@ -14,9 +14,11 @@ export const ActionButtons = props => {
 
   const warpCooldown = async dispatch => {
     setCooldownLock(true, dispatch);
+    setCurrentAction('warping', dispatch);
     const { cooldown } = await warp(dispatch);
     sleep(cooldown);
     setCooldownLock(false, dispatch);
+    setCurrentAction('idle', dispatch);
   };
 
   return (

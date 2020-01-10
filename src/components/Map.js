@@ -23,11 +23,22 @@ export const Map = props => {
   let currentMap = gameplay.room_id < 500 ? worldMap : darkWorld;
   let reason = gameplay.room_id < 500 ? 'mining' : 'snitching';
 
+  useEffect(() => {
+    document.body.style.backgroundColor =
+      gameplay.dimension === 'dark' ? '#3b3f3f' : 'white';
+  }, [gameplay.dimension]);
+
   return (
-    <StyledMap size={mapSize}>
+    <StyledMap dark={gameplay.dimension === 'dark'} size={mapSize}>
+      {gameplay.dimension === 'light' ? (
+        <h2>Lambda Treasure Island</h2>
+      ) : (
+        <h2 dark>The Dark Dimension</h2>
+      )}
       {Object.values(currentMap).map(room => (
         <Room
           reason={reason}
+          dark={gameplay.dimension === 'dark'}
           key={room.room_id}
           mapSize={props.size}
           player={gameplay.room_id === room.room_id}
@@ -39,10 +50,20 @@ export const Map = props => {
 };
 
 const StyledMap = styled.div`
-  --map-size: ${props => props.size};
+  h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 6rem;
+    color: ${props =>
+      props.dark ? props.theme.lightGray : props.theme.darkGray};
+  }
+
+  /* background-color: ${props =>
+    props.dark ? props.theme.darkGray : 'white'}; */
 
   position: relative;
-  width: var(--map-size);
-  height: var(--map-size);
-  margin: 25px auto;
+  width: 100vw;
+  height: 100vw;
+  padding-bottom: 100vw;
 `;

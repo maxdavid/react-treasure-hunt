@@ -19,7 +19,12 @@ export const Action = props => {
         idle={gameplay.currentAction === 'idle'}
       >
         <h2>{gameplay.currentAction}</h2>
-        {gameplay.currentAction === 'idle' ? '' : <h4>Click to Stop</h4>}
+        {gameplay.currentAction === 'idle' ||
+        gameplay.currentAction === 'warping' ? (
+          ''
+        ) : (
+          <h4>Click to Stop</h4>
+        )}
       </StatusIndicator>
       <ActionButtons disabled={gameplay.cooldownLock} />
     </StyledAction>

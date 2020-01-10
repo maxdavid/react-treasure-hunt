@@ -9,6 +9,7 @@ export const initGame = dispatch => {
   return axiosWithAuth()
     .get('adv/init/')
     .then(res => {
+      res.data.dimension = res.data.room_id > 500 ? 'dark' : 'light';
       dispatch({ type: INIT_SUCCESS, payload: res.data });
       return res.data;
     })
