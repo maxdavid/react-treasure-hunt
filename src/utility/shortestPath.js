@@ -42,7 +42,7 @@ export const shortestPath = async (
       newRoom = await dash(dispatch, {
         direction: dashDirection,
         num_rooms: `${dashPath.length}`,
-        next_room_ids: `${dashPath}`,
+        next_room_ids: `${dashPath}`
       });
       path = newPath;
       nextRoom = ['-', dashPath[dashPath.length - 1]];
@@ -53,12 +53,12 @@ export const shortestPath = async (
       if (terrain === 'CAVE') {
         newRoom = await move(dispatch, {
           direction: nextRoom[0],
-          next_room_id: `${nextRoom[1]}`,
+          next_room_id: `${nextRoom[1]}`
         });
       } else {
         newRoom = await fly(dispatch, {
           direction: nextRoom[0],
-          next_room_id: `${nextRoom[1]}`,
+          next_room_id: `${nextRoom[1]}`
         });
       }
     }
