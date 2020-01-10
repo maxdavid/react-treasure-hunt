@@ -52,7 +52,8 @@ import {
   START_WARP,
   WARP_SUCCESS,
   WARP_ERROR,
-  SET_COOLDOWN_LOCK
+  SET_COOLDOWN_LOCK,
+  SET_CURRENT_ACTION
 } from '../actions';
 
 /* 
@@ -121,6 +122,7 @@ export const gameplayReducer = (state, { type, payload }) => {
     case DASH_SUCCESS:
     case WARP_SUCCESS:
     case SET_COOLDOWN_LOCK:
+    case SET_CURRENT_ACTION:
       return {
         ...state,
         isLoading: false,

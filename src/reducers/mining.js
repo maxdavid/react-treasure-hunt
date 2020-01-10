@@ -4,7 +4,7 @@ import {
   MINE_ERROR,
   START_GETTING_PROOF,
   GOT_PROOF,
-  PROOF_ERROR,
+  PROOF_ERROR
 } from '../actions';
 
 /* 
@@ -25,22 +25,22 @@ export const miningReducer = (state, { type, payload }) => {
     case START_GETTING_PROOF:
       return {
         ...state,
-        isLoading: true,
+        isLoading: true
       };
     case MINE_SUCCESS:
     case GOT_PROOF:
       return {
         ...state,
-        isLoading: false,
+        isLoading: false
       };
     case MINE_ERROR:
     case PROOF_ERROR:
       return {
         ...state,
         isLoading: false,
-        errorMessage: payload,
+        errorMessage: payload
       };
     default:
-        return {...state}
+      return { ...state };
   }
 };

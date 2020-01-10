@@ -1,10 +1,11 @@
 import { sha256 } from 'js-sha256';
 import { sleep } from './randomWalk';
-import { getProof, mine, examine } from '../actions';
+import { getProof, mine, examine, setCurrentAction } from '../actions';
 import { shortestPath } from './shortestPath';
 import { CPU } from './cpu';
 
 export const mining = async (currRoom, dispatch) => {
+  setCurrentAction('mining', dispatch);
   let count = 0;
 
   while (true) {
