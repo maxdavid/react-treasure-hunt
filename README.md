@@ -4,7 +4,7 @@ React client for interacting with the [Lambda treasure hunt](https://github.com/
 
 ![player info demo](./img/player-info.png)
 
-### Setup
+## Setup
 
 To connect, clone project and run `npm install`.
 
@@ -16,7 +16,7 @@ REACT_APP_TOKEN=YOUR_API_KEY_HERE
 
 Use `npm run start` to start the client.
 
-### Usage
+## Usage
 
 ![light world map](./img/map-demo.png)
 
