@@ -5261,11 +5261,11 @@
     "s": null,
     "e": 325,
     "w": null,
-    "title": "Warp Shrine",
+    "title": "Fully Shrine",
     "terrain": "NORMAL",
     "elevation": 0,
     "coordinates": "(58,71)",
-    "description": "You are standing before a non-descript shrine. Discover its secrets and you might find your spirit immortalized within.",
+    "description": "Here lies a shrine for Full-lifey, who captured the golden snitch and gained the power to warp between worlds with some help from his team and a solitary spy.",
     "room_id": 374,
     "exits": ["e"],
     "items": ["small treasure"]

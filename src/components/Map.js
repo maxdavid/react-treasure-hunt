@@ -11,7 +11,7 @@ import {
   mining,
   snitching,
   makeGraph,
-  darkWorld
+  darkWorld,
 } from '../utility';
 
 export const Map = props => {
@@ -62,5 +62,4 @@ const StyledMap = styled.div`
   position: relative;
   width: 100vw;
   height: 1440px;
-  padding-bottom: 100vw;
 `;
