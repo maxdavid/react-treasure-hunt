@@ -5929,7 +5929,7 @@
     "terrain": "NORMAL",
     "elevation": 0,
     "coordinates": "(52,55)",
-    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction. You think you smell lilacs, but can't be sure.",
     "room_id": 420,
     "exits": ["s", "e", "w"],
     "items": ["small treasure"]
