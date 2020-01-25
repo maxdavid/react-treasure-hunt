@@ -10,8 +10,7 @@
     "coordinates": "(60,60)",
     "description": "You are standing in the center of a brightly lit room. You notice a shop to the west and exits to the north, south and east.",
     "room_id": 0,
-    "exits": ["n", "s", "e", "w"],
-    "items": []
+    "exits": ["n", "s", "e", "w"]
   },
   "1": {
     "n": null,
@@ -24,8 +23,7 @@
     "coordinates": "(59,60)",
     "description": "You are standing in a small shop. A sign behind the mechanical shopkeeper says 'WILL PAY FOR TREASURE'.",
     "room_id": 1,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "2": {
     "n": 0,
@@ -38,8 +36,7 @@
     "coordinates": "(60,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 2,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "3": {
     "n": null,
@@ -52,8 +49,7 @@
     "coordinates": "(61,59)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 3,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "4": {
     "n": 23,
@@ -66,8 +62,7 @@
     "coordinates": "(61,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 4,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "5": {
     "n": null,
@@ -80,8 +75,7 @@
     "coordinates": "(62,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 5,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "6": {
     "n": 2,
@@ -94,8 +88,7 @@
     "coordinates": "(60,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 6,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "7": {
     "n": 8,
@@ -108,8 +101,7 @@
     "coordinates": "(59,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 7,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "8": {
     "n": null,
@@ -122,8 +114,7 @@
     "coordinates": "(59,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 8,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "9": {
     "n": 3,
@@ -136,8 +127,7 @@
     "coordinates": "(61,58)",
     "description": "You are on the side of a steep incline.",
     "room_id": 9,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "10": {
     "n": 19,
@@ -150,8 +140,7 @@
     "coordinates": "(60,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 10,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "11": {
     "n": null,
@@ -164,8 +153,7 @@
     "coordinates": "(62,58)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 11,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "12": {
     "n": 9,
@@ -178,8 +166,7 @@
     "coordinates": "(61,57)",
     "description": "You are on the side of a steep incline.",
     "room_id": 12,
-    "exits": ["n", "s", "e", "w"],
-    "items": []
+    "exits": ["n", "s", "e", "w"]
   },
   "13": {
     "n": null,
@@ -192,8 +179,7 @@
     "coordinates": "(62,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 13,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "14": {
     "n": null,
@@ -206,8 +192,7 @@
     "coordinates": "(62,57)",
     "description": "You are on the side of a steep incline.",
     "room_id": 14,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "15": {
     "n": null,
@@ -220,8 +205,7 @@
     "coordinates": "(63,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 15,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "16": {
     "n": 58,
@@ -234,8 +218,7 @@
     "coordinates": "(58,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 16,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "17": {
     "n": 24,
@@ -248,8 +231,7 @@
     "coordinates": "(63,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 17,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "18": {
     "n": 12,
@@ -262,8 +244,7 @@
     "coordinates": "(61,56)",
     "description": "You are on the side of a steep incline.",
     "room_id": 18,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "19": {
     "n": 20,
@@ -276,8 +257,7 @@
     "coordinates": "(60,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 19,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "20": {
     "n": 63,
@@ -290,8 +270,7 @@
     "coordinates": "(60,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 20,
-    "exits": ["n", "s", "e", "w"],
-    "items": []
+    "exits": ["n", "s", "e", "w"]
   },
   "21": {
     "n": null,
@@ -304,8 +283,7 @@
     "coordinates": "(60,57)",
     "description": "You are on the side of a steep incline.",
     "room_id": 21,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "22": {
     "n": 18,
@@ -318,8 +296,7 @@
     "coordinates": "(61,55)",
     "description": "You are standing at the zenith of Mt. Holloway. You see before you a holy shrine erected in the image of a magnificent winged deity.",
     "room_id": 22,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "23": {
     "n": null,
@@ -332,8 +309,7 @@
     "coordinates": "(61,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 23,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "24": {
     "n": null,
@@ -346,8 +322,7 @@
     "coordinates": "(63,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 24,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "25": {
     "n": null,
@@ -360,8 +335,7 @@
     "coordinates": "(60,56)",
     "description": "You are on the side of a steep incline.",
     "room_id": 25,
-    "exits": ["e"],
-    "items": ["tiny treasure", "shiny treasure"]
+    "exits": ["e"]
   },
   "26": {
     "n": null,
@@ -374,8 +348,7 @@
     "coordinates": "(62,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 26,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "27": {
     "n": 40,
@@ -388,8 +361,7 @@
     "coordinates": "(61,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 27,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "28": {
     "n": 27,
@@ -402,8 +374,7 @@
     "coordinates": "(61,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 28,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "29": {
     "n": null,
@@ -416,8 +387,7 @@
     "coordinates": "(59,57)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 29,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "30": {
     "n": null,
@@ -430,8 +400,7 @@
     "coordinates": "(62,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 30,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "31": {
     "n": 30,
@@ -444,8 +413,7 @@
     "coordinates": "(62,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 31,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "32": {
     "n": 39,
@@ -458,8 +426,7 @@
     "coordinates": "(63,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 32,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "33": {
     "n": null,
@@ -472,8 +439,7 @@
     "coordinates": "(63,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 33,
-    "exits": ["e", "w"],
-    "items": ["small treasure", "small treasure"]
+    "exits": ["e", "w"]
   },
   "34": {
     "n": 14,
@@ -486,8 +452,7 @@
     "coordinates": "(62,56)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 34,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "35": {
     "n": null,
@@ -500,8 +465,7 @@
     "coordinates": "(63,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 35,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "36": {
     "n": null,
@@ -514,8 +478,7 @@
     "coordinates": "(60,55)",
     "description": "You are on the side of a steep incline.",
     "room_id": 36,
-    "exits": ["s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "37": {
     "n": null,
@@ -528,8 +491,7 @@
     "coordinates": "(63,57)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 37,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "38": {
     "n": null,
@@ -542,8 +504,7 @@
     "coordinates": "(64,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 38,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "39": {
     "n": 53,
@@ -556,8 +517,7 @@
     "coordinates": "(63,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 39,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "40": {
     "n": null,
@@ -570,8 +530,7 @@
     "coordinates": "(61,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 40,
-    "exits": ["s"],
-    "items": ["tiny treasure"]
+    "exits": ["s"]
   },
   "41": {
     "n": null,
@@ -584,8 +543,7 @@
     "coordinates": "(62,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 41,
-    "exits": ["e"],
-    "items": ["small treasure"]
+    "exits": ["e"]
   },
   "42": {
     "n": 44,
@@ -598,8 +556,7 @@
     "coordinates": "(64,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 42,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "43": {
     "n": null,
@@ -612,8 +569,7 @@
     "coordinates": "(59,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 43,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "44": {
     "n": null,
@@ -626,8 +582,7 @@
     "coordinates": "(64,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 44,
-    "exits": ["s"],
-    "items": ["small treasure", "tiny treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "45": {
     "n": 29,
@@ -640,8 +595,7 @@
     "coordinates": "(59,56)",
     "description": "You are on the side of a steep incline.",
     "room_id": 45,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "46": {
     "n": null,
@@ -654,8 +608,7 @@
     "coordinates": "(59,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 46,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "47": {
     "n": 71,
@@ -668,8 +621,7 @@
     "coordinates": "(58,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 47,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "48": {
     "n": 36,
@@ -682,8 +634,7 @@
     "coordinates": "(60,54)",
     "description": "You are on the side of a steep incline.",
     "room_id": 48,
-    "exits": ["n", "s", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "w"]
   },
   "49": {
     "n": null,
@@ -696,8 +647,7 @@
     "coordinates": "(58,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 49,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "50": {
     "n": 34,
@@ -710,8 +660,7 @@
     "coordinates": "(62,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 50,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "51": {
     "n": 69,
@@ -724,8 +673,7 @@
     "coordinates": "(64,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 51,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "52": {
     "n": 35,
@@ -738,8 +686,7 @@
     "coordinates": "(63,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 52,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "53": {
     "n": 95,
@@ -752,8 +699,7 @@
     "coordinates": "(63,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 53,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "54": {
     "n": null,
@@ -766,8 +712,7 @@
     "coordinates": "(64,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 54,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "55": {
     "n": null,
@@ -780,8 +725,7 @@
     "coordinates": "(63,61)",
     "description": "You are standing besides a large well. A sign next the well reads 'EXAMINE WELL, FIND WEALTH'.",
     "room_id": 55,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "56": {
     "n": null,
@@ -794,8 +738,7 @@
     "coordinates": "(58,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 56,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "57": {
     "n": null,
@@ -808,8 +751,7 @@
     "coordinates": "(65,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 57,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "58": {
     "n": null,
@@ -822,8 +764,7 @@
     "coordinates": "(58,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 58,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "59": {
     "n": 38,
@@ -836,8 +777,7 @@
     "coordinates": "(64,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 59,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "60": {
     "n": 45,
@@ -850,8 +790,7 @@
     "coordinates": "(59,55)",
     "description": "You are on the side of a steep incline.",
     "room_id": 60,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "61": {
     "n": null,
@@ -864,8 +803,7 @@
     "coordinates": "(57,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 61,
-    "exits": ["e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["e", "w"]
   },
   "62": {
     "n": 64,
@@ -878,8 +816,7 @@
     "coordinates": "(58,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 62,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "63": {
     "n": 72,
@@ -892,8 +829,7 @@
     "coordinates": "(60,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 63,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "64": {
     "n": null,
@@ -906,8 +842,7 @@
     "coordinates": "(58,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 64,
-    "exits": ["s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "w"]
   },
   "65": {
     "n": 74,
@@ -920,8 +855,7 @@
     "coordinates": "(57,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 65,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "66": {
     "n": 169,
@@ -934,8 +868,7 @@
     "coordinates": "(65,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 66,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "67": {
     "n": null,
@@ -948,8 +881,7 @@
     "coordinates": "(57,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 67,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "68": {
     "n": 52,
@@ -962,8 +894,7 @@
     "coordinates": "(63,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 68,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "69": {
     "n": 94,
@@ -976,8 +907,7 @@
     "coordinates": "(64,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 69,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "70": {
     "n": null,
@@ -990,8 +920,7 @@
     "coordinates": "(58,55)",
     "description": "You are on the side of a steep incline.",
     "room_id": 70,
-    "exits": ["s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "e", "w"]
   },
   "71": {
     "n": null,
@@ -1004,8 +933,7 @@
     "coordinates": "(58,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 71,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "72": {
     "n": null,
@@ -1018,8 +946,7 @@
     "coordinates": "(60,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 72,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "73": {
     "n": null,
@@ -1032,8 +959,7 @@
     "coordinates": "(59,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 73,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "74": {
     "n": 87,
@@ -1046,8 +972,7 @@
     "coordinates": "(57,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 74,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "75": {
     "n": null,
@@ -1060,8 +985,7 @@
     "coordinates": "(64,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 75,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "76": {
     "n": 83,
@@ -1074,8 +998,7 @@
     "coordinates": "(59,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 76,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "77": {
     "n": null,
@@ -1088,8 +1011,7 @@
     "coordinates": "(59,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 77,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "78": {
     "n": 22,
@@ -1102,8 +1024,7 @@
     "coordinates": "(61,54)",
     "description": "You are on the side of a steep incline.",
     "room_id": 78,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "79": {
     "n": 49,
@@ -1116,8 +1037,7 @@
     "coordinates": "(58,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 79,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "80": {
     "n": 42,
@@ -1130,8 +1050,7 @@
     "coordinates": "(64,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 80,
-    "exits": ["n", "s", "e"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e"]
   },
   "81": {
     "n": 80,
@@ -1144,8 +1063,7 @@
     "coordinates": "(64,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 81,
-    "exits": ["n"],
-    "items": ["tiny treasure"]
+    "exits": ["n"]
   },
   "82": {
     "n": 191,
@@ -1158,13 +1076,7 @@
     "coordinates": "(57,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 82,
-    "exits": ["n", "e"],
-    "items": [
-      "small treasure",
-      "tiny treasure",
-      "small treasure",
-      "small treasure"
-    ]
+    "exits": ["n", "e"]
   },
   "83": {
     "n": null,
@@ -1177,8 +1089,7 @@
     "coordinates": "(59,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 83,
-    "exits": ["s", "e", "w"],
-    "items": ["small treasure", "small treasure"]
+    "exits": ["s", "e", "w"]
   },
   "84": {
     "n": null,
@@ -1191,8 +1102,7 @@
     "coordinates": "(57,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 84,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "85": {
     "n": null,
@@ -1205,8 +1115,7 @@
     "coordinates": "(65,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 85,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "86": {
     "n": null,
@@ -1219,8 +1128,7 @@
     "coordinates": "(65,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 86,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "87": {
     "n": null,
@@ -1233,8 +1141,7 @@
     "coordinates": "(57,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 87,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "88": {
     "n": null,
@@ -1247,8 +1154,7 @@
     "coordinates": "(62,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 88,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "89": {
     "n": 50,
@@ -1261,8 +1167,7 @@
     "coordinates": "(62,54)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 89,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "90": {
     "n": null,
@@ -1275,8 +1180,7 @@
     "coordinates": "(66,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 90,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "91": {
     "n": 180,
@@ -1289,8 +1193,7 @@
     "coordinates": "(56,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 91,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "92": {
     "n": null,
@@ -1303,8 +1206,7 @@
     "coordinates": "(65,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 92,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "93": {
     "n": 89,
@@ -1317,8 +1219,7 @@
     "coordinates": "(62,53)",
     "description": "You are on the side of a steep incline.",
     "room_id": 93,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "94": {
     "n": 152,
@@ -1331,8 +1232,7 @@
     "coordinates": "(64,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 94,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "95": {
     "n": 119,
@@ -1345,8 +1245,7 @@
     "coordinates": "(63,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 95,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "96": {
     "n": 86,
@@ -1359,8 +1258,7 @@
     "coordinates": "(65,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 96,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "97": {
     "n": null,
@@ -1373,8 +1271,7 @@
     "coordinates": "(66,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 97,
-    "exits": ["e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["e", "w"]
   },
   "98": {
     "n": 102,
@@ -1387,8 +1284,7 @@
     "coordinates": "(57,55)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 98,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "99": {
     "n": 190,
@@ -1401,8 +1297,7 @@
     "coordinates": "(55,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 99,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "100": {
     "n": null,
@@ -1415,8 +1310,7 @@
     "coordinates": "(64,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 100,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "101": {
     "n": 91,
@@ -1429,8 +1323,7 @@
     "coordinates": "(56,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 101,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "102": {
     "n": null,
@@ -1443,8 +1336,7 @@
     "coordinates": "(57,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 102,
-    "exits": ["s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "w"]
   },
   "103": {
     "n": 160,
@@ -1457,8 +1349,7 @@
     "coordinates": "(65,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 103,
-    "exits": ["n", "w"],
-    "items": ["tiny treasure", "small treasure", "tiny treasure"]
+    "exits": ["n", "w"]
   },
   "104": {
     "n": 59,
@@ -1471,8 +1362,7 @@
     "coordinates": "(64,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 104,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "105": {
     "n": 48,
@@ -1485,8 +1375,7 @@
     "coordinates": "(60,53)",
     "description": "You are on the side of a steep incline.",
     "room_id": 105,
-    "exits": ["n", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "w"]
   },
   "106": {
     "n": 100,
@@ -1499,8 +1388,7 @@
     "coordinates": "(64,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 106,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "107": {
     "n": null,
@@ -1513,8 +1401,7 @@
     "coordinates": "(65,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 107,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "108": {
     "n": 78,
@@ -1527,8 +1414,7 @@
     "coordinates": "(61,53)",
     "description": "You are on the side of a steep incline.",
     "room_id": 108,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "109": {
     "n": null,
@@ -1541,8 +1427,7 @@
     "coordinates": "(56,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 109,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "110": {
     "n": null,
@@ -1555,8 +1440,7 @@
     "coordinates": "(58,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 110,
-    "exits": ["e"],
-    "items": ["tiny treasure", "small treasure"]
+    "exits": ["e"]
   },
   "111": {
     "n": 106,
@@ -1569,8 +1453,7 @@
     "coordinates": "(64,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 111,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "112": {
     "n": null,
@@ -1583,8 +1466,7 @@
     "coordinates": "(65,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 112,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "113": {
     "n": null,
@@ -1597,8 +1479,7 @@
     "coordinates": "(55,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 113,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "114": {
     "n": 113,
@@ -1611,8 +1492,7 @@
     "coordinates": "(55,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 114,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "115": {
     "n": 116,
@@ -1625,8 +1505,7 @@
     "coordinates": "(62,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 115,
-    "exits": ["n", "e"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "e"]
   },
   "116": {
     "n": 132,
@@ -1639,8 +1518,7 @@
     "coordinates": "(62,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 116,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "117": {
     "n": 108,
@@ -1653,8 +1531,7 @@
     "coordinates": "(61,52)",
     "description": "You are on the side of a steep incline.",
     "room_id": 117,
-    "exits": ["n", "s", "e", "w"],
-    "items": []
+    "exits": ["n", "s", "e", "w"]
   },
   "118": {
     "n": null,
@@ -1667,8 +1544,7 @@
     "coordinates": "(65,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 118,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "119": {
     "n": 134,
@@ -1681,8 +1557,7 @@
     "coordinates": "(63,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 119,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "120": {
     "n": 107,
@@ -1695,8 +1570,7 @@
     "coordinates": "(65,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 120,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "121": {
     "n": 128,
@@ -1709,8 +1583,7 @@
     "coordinates": "(66,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 121,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "122": {
     "n": 124,
@@ -1723,8 +1596,7 @@
     "coordinates": "(61,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 122,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "123": {
     "n": null,
@@ -1737,8 +1609,7 @@
     "coordinates": "(66,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 123,
-    "exits": ["w"],
-    "items": ["small treasure"]
+    "exits": ["w"]
   },
   "124": {
     "n": 157,
@@ -1751,8 +1622,7 @@
     "coordinates": "(61,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 124,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "125": {
     "n": 165,
@@ -1765,8 +1635,7 @@
     "coordinates": "(58,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 125,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "126": {
     "n": 98,
@@ -1779,8 +1648,7 @@
     "coordinates": "(57,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 126,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "127": {
     "n": null,
@@ -1793,8 +1661,7 @@
     "coordinates": "(66,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 127,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "128": {
     "n": null,
@@ -1807,8 +1674,7 @@
     "coordinates": "(66,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 128,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "129": {
     "n": 126,
@@ -1821,8 +1687,7 @@
     "coordinates": "(57,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 129,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "130": {
     "n": null,
@@ -1835,8 +1700,7 @@
     "coordinates": "(60,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 130,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "131": {
     "n": 117,
@@ -1849,8 +1713,7 @@
     "coordinates": "(61,51)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 131,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "132": {
     "n": null,
@@ -1863,8 +1726,7 @@
     "coordinates": "(62,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 132,
-    "exits": ["s"],
-    "items": ["tiny treasure", "small treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "133": {
     "n": null,
@@ -1877,8 +1739,7 @@
     "coordinates": "(60,52)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 133,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "134": {
     "n": 147,
@@ -1891,8 +1752,7 @@
     "coordinates": "(63,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 134,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "135": {
     "n": null,
@@ -1905,8 +1765,7 @@
     "coordinates": "(63,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 135,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "136": {
     "n": null,
@@ -1919,8 +1778,7 @@
     "coordinates": "(57,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 136,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "137": {
     "n": null,
@@ -1933,8 +1791,7 @@
     "coordinates": "(66,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 137,
-    "exits": ["w"],
-    "items": ["small treasure"]
+    "exits": ["w"]
   },
   "138": {
     "n": null,
@@ -1947,8 +1804,7 @@
     "coordinates": "(60,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 138,
-    "exits": ["s", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "139": {
     "n": null,
@@ -1961,8 +1817,7 @@
     "coordinates": "(56,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 139,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "140": {
     "n": null,
@@ -1975,8 +1830,7 @@
     "coordinates": "(66,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 140,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "141": {
     "n": 112,
@@ -1989,8 +1843,7 @@
     "coordinates": "(65,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 141,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "142": {
     "n": null,
@@ -2003,8 +1856,7 @@
     "coordinates": "(56,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 142,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "143": {
     "n": null,
@@ -2017,8 +1869,7 @@
     "coordinates": "(67,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 143,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "144": {
     "n": null,
@@ -2031,8 +1882,7 @@
     "coordinates": "(64,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 144,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "145": {
     "n": 174,
@@ -2045,8 +1895,7 @@
     "coordinates": "(66,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 145,
-    "exits": ["n", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "146": {
     "n": 215,
@@ -2059,8 +1908,7 @@
     "coordinates": "(54,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 146,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "147": {
     "n": 200,
@@ -2073,8 +1921,7 @@
     "coordinates": "(63,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 147,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "148": {
     "n": null,
@@ -2087,8 +1934,7 @@
     "coordinates": "(56,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 148,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "149": {
     "n": null,
@@ -2101,8 +1947,7 @@
     "coordinates": "(59,54)",
     "description": "You are on the side of a steep incline.",
     "room_id": 149,
-    "exits": ["e"],
-    "items": ["tiny treasure"]
+    "exits": ["e"]
   },
   "150": {
     "n": 135,
@@ -2115,8 +1960,7 @@
     "coordinates": "(63,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 150,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "151": {
     "n": 172,
@@ -2129,8 +1973,7 @@
     "coordinates": "(62,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 151,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "152": {
     "n": null,
@@ -2143,8 +1986,7 @@
     "coordinates": "(64,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 152,
-    "exits": ["s"],
-    "items": ["shiny treasure", "small treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "153": {
     "n": null,
@@ -2157,8 +1999,7 @@
     "coordinates": "(64,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 153,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "154": {
     "n": null,
@@ -2171,8 +2012,7 @@
     "coordinates": "(66,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 154,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "155": {
     "n": null,
@@ -2185,8 +2025,7 @@
     "coordinates": "(65,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 155,
-    "exits": ["s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "156": {
     "n": null,
@@ -2199,8 +2038,7 @@
     "coordinates": "(66,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 156,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "157": {
     "n": 210,
@@ -2213,8 +2051,7 @@
     "coordinates": "(61,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 157,
-    "exits": ["n", "s", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "158": {
     "n": null,
@@ -2227,8 +2064,7 @@
     "coordinates": "(65,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 158,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "159": {
     "n": null,
@@ -2241,8 +2077,7 @@
     "coordinates": "(55,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 159,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "160": {
     "n": null,
@@ -2255,8 +2090,7 @@
     "coordinates": "(65,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 160,
-    "exits": ["s"],
-    "items": ["tiny treasure", "shiny treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "161": {
     "n": null,
@@ -2269,8 +2103,7 @@
     "coordinates": "(56,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 161,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "162": {
     "n": null,
@@ -2283,8 +2116,7 @@
     "coordinates": "(56,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 162,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "163": {
     "n": 70,
@@ -2297,8 +2129,7 @@
     "coordinates": "(58,54)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 163,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "164": {
     "n": 217,
@@ -2311,8 +2142,7 @@
     "coordinates": "(67,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 164,
-    "exits": ["n", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "165": {
     "n": 203,
@@ -2325,8 +2155,7 @@
     "coordinates": "(58,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 165,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "166": {
     "n": null,
@@ -2339,8 +2168,7 @@
     "coordinates": "(62,52)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 166,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "167": {
     "n": 158,
@@ -2353,8 +2181,7 @@
     "coordinates": "(65,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 167,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "168": {
     "n": 156,
@@ -2367,8 +2194,7 @@
     "coordinates": "(66,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 168,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "169": {
     "n": null,
@@ -2381,8 +2207,7 @@
     "coordinates": "(65,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 169,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "170": {
     "n": null,
@@ -2395,8 +2220,7 @@
     "coordinates": "(56,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 170,
-    "exits": ["e"],
-    "items": ["small treasure", "shiny treasure"]
+    "exits": ["e"]
   },
   "171": {
     "n": null,
@@ -2409,8 +2233,7 @@
     "coordinates": "(56,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 171,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "172": {
     "n": 267,
@@ -2423,8 +2246,7 @@
     "coordinates": "(62,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 172,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "173": {
     "n": null,
@@ -2437,8 +2259,7 @@
     "coordinates": "(59,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 173,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "174": {
     "n": 192,
@@ -2451,8 +2272,7 @@
     "coordinates": "(66,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 174,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "175": {
     "n": null,
@@ -2465,8 +2285,7 @@
     "coordinates": "(55,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 175,
-    "exits": ["s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "176": {
     "n": null,
@@ -2479,8 +2298,7 @@
     "coordinates": "(54,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 176,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "177": {
     "n": 146,
@@ -2493,8 +2311,7 @@
     "coordinates": "(54,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 177,
-    "exits": ["n", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "w"]
   },
   "178": {
     "n": 209,
@@ -2507,8 +2324,7 @@
     "coordinates": "(67,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 178,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "179": {
     "n": null,
@@ -2521,8 +2337,7 @@
     "coordinates": "(54,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 179,
-    "exits": ["s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "180": {
     "n": null,
@@ -2535,8 +2350,7 @@
     "coordinates": "(56,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 180,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "181": {
     "n": null,
@@ -2549,8 +2363,7 @@
     "coordinates": "(67,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 181,
-    "exits": ["w"],
-    "items": ["small treasure"]
+    "exits": ["w"]
   },
   "182": {
     "n": null,
@@ -2563,8 +2376,7 @@
     "coordinates": "(60,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 182,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "183": {
     "n": 175,
@@ -2577,8 +2389,7 @@
     "coordinates": "(55,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 183,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "184": {
     "n": null,
@@ -2591,8 +2402,7 @@
     "coordinates": "(67,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 184,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "185": {
     "n": 109,
@@ -2605,8 +2415,7 @@
     "coordinates": "(56,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 185,
-    "exits": ["n"],
-    "items": ["tiny treasure"]
+    "exits": ["n"]
   },
   "186": {
     "n": null,
@@ -2619,8 +2428,7 @@
     "coordinates": "(66,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 186,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "187": {
     "n": 155,
@@ -2633,8 +2441,7 @@
     "coordinates": "(65,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 187,
-    "exits": ["n"],
-    "items": ["small treasure"]
+    "exits": ["n"]
   },
   "188": {
     "n": null,
@@ -2647,8 +2454,7 @@
     "coordinates": "(55,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 188,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "189": {
     "n": null,
@@ -2661,8 +2467,7 @@
     "coordinates": "(67,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 189,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "190": {
     "n": null,
@@ -2675,8 +2480,7 @@
     "coordinates": "(55,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 190,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "191": {
     "n": null,
@@ -2689,8 +2493,7 @@
     "coordinates": "(57,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 191,
-    "exits": ["s"],
-    "items": ["tiny treasure", "small treasure"]
+    "exits": ["s"]
   },
   "192": {
     "n": 201,
@@ -2703,8 +2506,7 @@
     "coordinates": "(66,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 192,
-    "exits": ["n", "s", "e"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "193": {
     "n": null,
@@ -2717,8 +2519,7 @@
     "coordinates": "(67,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 193,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "194": {
     "n": null,
@@ -2731,8 +2532,7 @@
     "coordinates": "(58,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 194,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "195": {
     "n": null,
@@ -2745,8 +2545,7 @@
     "coordinates": "(59,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 195,
-    "exits": ["s", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "196": {
     "n": 222,
@@ -2759,8 +2558,7 @@
     "coordinates": "(54,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 196,
-    "exits": ["n", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "197": {
     "n": 232,
@@ -2773,8 +2571,7 @@
     "coordinates": "(53,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 197,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "198": {
     "n": 166,
@@ -2787,8 +2584,7 @@
     "coordinates": "(62,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 198,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "199": {
     "n": null,
@@ -2801,8 +2597,7 @@
     "coordinates": "(63,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 199,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "200": {
     "n": 227,
@@ -2815,8 +2610,7 @@
     "coordinates": "(63,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 200,
-    "exits": ["n", "s", "e"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e"]
   },
   "201": {
     "n": null,
@@ -2829,8 +2623,7 @@
     "coordinates": "(66,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 201,
-    "exits": ["s"],
-    "items": ["tiny treasure"]
+    "exits": ["s"]
   },
   "202": {
     "n": null,
@@ -2843,8 +2636,7 @@
     "coordinates": "(59,53)",
     "description": "You are at the base of a large, looming mountain.",
     "room_id": 202,
-    "exits": ["e"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "203": {
     "n": 268,
@@ -2857,8 +2649,7 @@
     "coordinates": "(58,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 203,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "204": {
     "n": 219,
@@ -2871,8 +2662,7 @@
     "coordinates": "(57,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 204,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "205": {
     "n": null,
@@ -2885,8 +2675,7 @@
     "coordinates": "(67,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 205,
-    "exits": ["s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "e", "w"]
   },
   "206": {
     "n": 288,
@@ -2899,8 +2688,7 @@
     "coordinates": "(64,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 206,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "207": {
     "n": 231,
@@ -2913,8 +2701,7 @@
     "coordinates": "(61,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 207,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "208": {
     "n": null,
@@ -2927,8 +2714,7 @@
     "coordinates": "(59,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 208,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "209": {
     "n": null,
@@ -2941,8 +2727,7 @@
     "coordinates": "(67,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 209,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "210": {
     "n": null,
@@ -2955,14 +2740,7 @@
     "coordinates": "(61,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 210,
-    "exits": ["s"],
-    "items": [
-      "small treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "shiny treasure",
-      "small treasure"
-    ]
+    "exits": ["s"]
   },
   "211": {
     "n": 138,
@@ -2975,8 +2753,7 @@
     "coordinates": "(60,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 211,
-    "exits": ["n"],
-    "items": ["shiny treasure"]
+    "exits": ["n"]
   },
   "212": {
     "n": null,
@@ -2989,8 +2766,7 @@
     "coordinates": "(68,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 212,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "213": {
     "n": null,
@@ -3003,8 +2779,7 @@
     "coordinates": "(53,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 213,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "214": {
     "n": 194,
@@ -3017,8 +2792,7 @@
     "coordinates": "(58,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 214,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "215": {
     "n": 246,
@@ -3031,8 +2805,7 @@
     "coordinates": "(54,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 215,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "216": {
     "n": 234,
@@ -3045,8 +2818,7 @@
     "coordinates": "(56,67)",
     "description": "You are standing in a dark cave.",
     "room_id": 216,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "217": {
     "n": null,
@@ -3059,8 +2831,7 @@
     "coordinates": "(67,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 217,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "218": {
     "n": null,
@@ -3073,8 +2844,7 @@
     "coordinates": "(55,67)",
     "description": "You are standing in a dark cave.",
     "room_id": 218,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "219": {
     "n": null,
@@ -3087,8 +2857,7 @@
     "coordinates": "(57,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 219,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "220": {
     "n": null,
@@ -3101,8 +2870,7 @@
     "coordinates": "(67,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 220,
-    "exits": ["w"],
-    "items": ["tiny treasure"]
+    "exits": ["w"]
   },
   "221": {
     "n": null,
@@ -3115,8 +2883,7 @@
     "coordinates": "(68,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 221,
-    "exits": ["s", "e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "222": {
     "n": 305,
@@ -3129,8 +2896,7 @@
     "coordinates": "(54,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 222,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "223": {
     "n": 283,
@@ -3143,8 +2909,7 @@
     "coordinates": "(67,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 223,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "224": {
     "n": null,
@@ -3157,8 +2922,7 @@
     "coordinates": "(67,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 224,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "225": {
     "n": null,
@@ -3171,8 +2935,7 @@
     "coordinates": "(58,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 225,
-    "exits": ["s", "e"],
-    "items": ["small treasure"]
+    "exits": ["s", "e"]
   },
   "226": {
     "n": null,
@@ -3185,8 +2948,7 @@
     "coordinates": "(57,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 226,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "227": {
     "n": 269,
@@ -3199,8 +2961,7 @@
     "coordinates": "(63,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 227,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "228": {
     "n": 195,
@@ -3213,8 +2974,7 @@
     "coordinates": "(59,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 228,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "229": {
     "n": 183,
@@ -3227,8 +2987,7 @@
     "coordinates": "(55,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 229,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "230": {
     "n": 199,
@@ -3241,8 +3000,7 @@
     "coordinates": "(63,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 230,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "231": {
     "n": null,
@@ -3255,8 +3013,7 @@
     "coordinates": "(61,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 231,
-    "exits": ["s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "w"]
   },
   "232": {
     "n": 272,
@@ -3269,8 +3026,7 @@
     "coordinates": "(53,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 232,
-    "exits": ["n", "s", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "w"]
   },
   "233": {
     "n": 179,
@@ -3283,8 +3039,7 @@
     "coordinates": "(54,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 233,
-    "exits": ["n", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "w"]
   },
   "234": {
     "n": 368,
@@ -3297,8 +3052,7 @@
     "coordinates": "(56,68)",
     "description": "You are standing in a dark cave.",
     "room_id": 234,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "235": {
     "n": 330,
@@ -3311,8 +3065,7 @@
     "coordinates": "(52,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 235,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "236": {
     "n": null,
@@ -3325,8 +3078,7 @@
     "coordinates": "(54,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 236,
-    "exits": ["s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e"]
   },
   "237": {
     "n": null,
@@ -3339,8 +3091,7 @@
     "coordinates": "(57,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 237,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure", "tiny treasure", "tiny treasure"]
+    "exits": ["e", "w"]
   },
   "238": {
     "n": null,
@@ -3353,8 +3104,7 @@
     "coordinates": "(53,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 238,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "239": {
     "n": 198,
@@ -3367,8 +3117,7 @@
     "coordinates": "(62,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 239,
-    "exits": ["n", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "w"]
   },
   "240": {
     "n": 249,
@@ -3381,8 +3130,7 @@
     "coordinates": "(69,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 240,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "241": {
     "n": 205,
@@ -3395,8 +3143,7 @@
     "coordinates": "(67,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 241,
-    "exits": ["n", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e"]
   },
   "242": {
     "n": 287,
@@ -3409,8 +3156,7 @@
     "coordinates": "(54,67)",
     "description": "You are standing in a dark cave.",
     "room_id": 242,
-    "exits": ["n", "s", "e", "w"],
-    "items": []
+    "exits": ["n", "s", "e", "w"]
   },
   "243": {
     "n": null,
@@ -3423,8 +3169,7 @@
     "coordinates": "(68,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 243,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "244": {
     "n": 131,
@@ -3437,8 +3182,7 @@
     "coordinates": "(61,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 244,
-    "exits": ["n", "e"],
-    "items": ["tiny treasure", "small treasure"]
+    "exits": ["n", "e"]
   },
   "245": {
     "n": null,
@@ -3451,8 +3195,7 @@
     "coordinates": "(56,66)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 245,
-    "exits": ["s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e"]
   },
   "246": {
     "n": null,
@@ -3465,8 +3208,7 @@
     "coordinates": "(54,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 246,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "247": {
     "n": null,
@@ -3479,8 +3221,7 @@
     "coordinates": "(68,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 247,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "248": {
     "n": 296,
@@ -3493,8 +3234,7 @@
     "coordinates": "(60,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 248,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "249": {
     "n": 265,
@@ -3507,8 +3247,7 @@
     "coordinates": "(69,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 249,
-    "exits": ["n", "s", "e"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "250": {
     "n": 229,
@@ -3521,8 +3260,7 @@
     "coordinates": "(55,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 250,
-    "exits": ["n", "s", "e"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e"]
   },
   "251": {
     "n": null,
@@ -3535,8 +3273,7 @@
     "coordinates": "(68,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 251,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "252": {
     "n": 284,
@@ -3549,8 +3286,7 @@
     "coordinates": "(55,68)",
     "description": "You are standing in a dark cave.",
     "room_id": 252,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "253": {
     "n": 221,
@@ -3563,8 +3299,7 @@
     "coordinates": "(68,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 253,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "254": {
     "n": 245,
@@ -3577,8 +3312,7 @@
     "coordinates": "(56,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 254,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "255": {
     "n": null,
@@ -3591,8 +3325,7 @@
     "coordinates": "(68,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 255,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "256": {
     "n": null,
@@ -3605,8 +3338,7 @@
     "coordinates": "(69,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 256,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "257": {
     "n": 320,
@@ -3619,8 +3351,7 @@
     "coordinates": "(53,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 257,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "258": {
     "n": null,
@@ -3633,8 +3364,7 @@
     "coordinates": "(69,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 258,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "259": {
     "n": 242,
@@ -3647,8 +3377,7 @@
     "coordinates": "(54,66)",
     "description": "You are standing in a dark cave.",
     "room_id": 259,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "260": {
     "n": null,
@@ -3661,13 +3390,7 @@
     "coordinates": "(66,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 260,
-    "exits": ["w"],
-    "items": [
-      "tiny treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "tiny treasure"
-    ]
+    "exits": ["w"]
   },
   "261": {
     "n": null,
@@ -3680,8 +3403,7 @@
     "coordinates": "(69,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 261,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "262": {
     "n": 167,
@@ -3694,8 +3416,7 @@
     "coordinates": "(65,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 262,
-    "exits": ["n", "s", "e"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e"]
   },
   "263": {
     "n": 218,
@@ -3708,8 +3429,7 @@
     "coordinates": "(55,66)",
     "description": "You are standing in a dark cave.",
     "room_id": 263,
-    "exits": ["n"],
-    "items": ["tiny treasure"]
+    "exits": ["n"]
   },
   "264": {
     "n": 236,
@@ -3722,8 +3442,7 @@
     "coordinates": "(54,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 264,
-    "exits": ["n", "s", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "w"]
   },
   "265": {
     "n": 279,
@@ -3736,8 +3455,7 @@
     "coordinates": "(69,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 265,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "266": {
     "n": null,
@@ -3750,8 +3468,7 @@
     "coordinates": "(68,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 266,
-    "exits": ["w"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "267": {
     "n": 285,
@@ -3764,8 +3481,7 @@
     "coordinates": "(62,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 267,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "268": {
     "n": null,
@@ -3778,8 +3494,7 @@
     "coordinates": "(58,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 268,
-    "exits": ["s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "e", "w"]
   },
   "269": {
     "n": 319,
@@ -3792,8 +3507,7 @@
     "coordinates": "(63,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 269,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "270": {
     "n": 416,
@@ -3806,8 +3520,7 @@
     "coordinates": "(70,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 270,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "271": {
     "n": 337,
@@ -3820,8 +3533,7 @@
     "coordinates": "(61,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 271,
-    "exits": ["n", "e"],
-    "items": ["tiny treasure", "small treasure", "tiny treasure"]
+    "exits": ["n", "e"]
   },
   "272": {
     "n": 295,
@@ -3834,8 +3546,7 @@
     "coordinates": "(53,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 272,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "273": {
     "n": 343,
@@ -3848,8 +3559,7 @@
     "coordinates": "(53,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 273,
-    "exits": ["n", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e"]
   },
   "274": {
     "n": 264,
@@ -3862,8 +3572,7 @@
     "coordinates": "(54,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 274,
-    "exits": ["n", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "w"]
   },
   "275": {
     "n": null,
@@ -3876,8 +3585,7 @@
     "coordinates": "(53,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You notice a cave entrance to the east and cliffside landmark to the west.",
     "room_id": 275,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "276": {
     "n": null,
@@ -3890,8 +3598,7 @@
     "coordinates": "(52,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 276,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "277": {
     "n": 261,
@@ -3904,8 +3611,7 @@
     "coordinates": "(69,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 277,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "278": {
     "n": 225,
@@ -3918,8 +3624,7 @@
     "coordinates": "(58,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 278,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "279": {
     "n": null,
@@ -3932,8 +3637,7 @@
     "coordinates": "(69,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 279,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "280": {
     "n": 325,
@@ -3946,8 +3650,7 @@
     "coordinates": "(59,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 280,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "281": {
     "n": 228,
@@ -3960,8 +3663,7 @@
     "coordinates": "(59,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 281,
-    "exits": ["n", "s", "e", "w"],
-    "items": []
+    "exits": ["n", "s", "e", "w"]
   },
   "282": {
     "n": null,
@@ -3974,8 +3676,7 @@
     "coordinates": "(70,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 282,
-    "exits": ["w"],
-    "items": ["tiny treasure"]
+    "exits": ["w"]
   },
   "283": {
     "n": 331,
@@ -3988,8 +3689,7 @@
     "coordinates": "(67,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 283,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "284": {
     "n": 302,
@@ -4002,8 +3702,7 @@
     "coordinates": "(55,69)",
     "description": "You are standing in a dark cave.",
     "room_id": 284,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "285": {
     "n": 286,
@@ -4016,8 +3715,7 @@
     "coordinates": "(62,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 285,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "286": {
     "n": 336,
@@ -4030,8 +3728,7 @@
     "coordinates": "(62,73)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 286,
-    "exits": ["n", "s", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "w"]
   },
   "287": {
     "n": null,
@@ -4044,8 +3741,7 @@
     "coordinates": "(54,68)",
     "description": "You are standing in a dark cave.",
     "room_id": 287,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "288": {
     "n": null,
@@ -4058,8 +3754,7 @@
     "coordinates": "(64,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 288,
-    "exits": ["s"],
-    "items": ["small treasure", "small treasure", "small treasure"]
+    "exits": ["s"]
   },
   "289": {
     "n": null,
@@ -4072,8 +3767,7 @@
     "coordinates": "(56,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 289,
-    "exits": ["w"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "290": {
     "n": null,
@@ -4086,8 +3780,7 @@
     "coordinates": "(60,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 290,
-    "exits": ["e"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "291": {
     "n": 410,
@@ -4100,8 +3793,7 @@
     "coordinates": "(61,73)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 291,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "292": {
     "n": 301,
@@ -4114,8 +3806,7 @@
     "coordinates": "(55,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 292,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "293": {
     "n": 243,
@@ -4128,8 +3819,7 @@
     "coordinates": "(68,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 293,
-    "exits": ["n"],
-    "items": ["small treasure", "shiny treasure"]
+    "exits": ["n"]
   },
   "294": {
     "n": 250,
@@ -4142,8 +3832,7 @@
     "coordinates": "(55,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 294,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "295": {
     "n": null,
@@ -4156,8 +3845,7 @@
     "coordinates": "(53,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 295,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "296": {
     "n": null,
@@ -4170,8 +3858,7 @@
     "coordinates": "(60,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 296,
-    "exits": ["s"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "297": {
     "n": null,
@@ -4184,8 +3871,7 @@
     "coordinates": "(64,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 297,
-    "exits": ["w"],
-    "items": ["shiny treasure"]
+    "exits": ["w"]
   },
   "298": {
     "n": null,
@@ -4198,8 +3884,7 @@
     "coordinates": "(68,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 298,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "299": {
     "n": null,
@@ -4212,8 +3897,7 @@
     "coordinates": "(59,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 299,
-    "exits": ["e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["e", "w"]
   },
   "300": {
     "n": 226,
@@ -4226,8 +3910,7 @@
     "coordinates": "(57,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 300,
-    "exits": ["n", "s", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "301": {
     "n": 304,
@@ -4240,8 +3923,7 @@
     "coordinates": "(55,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 301,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "302": {
     "n": 422,
@@ -4254,8 +3936,7 @@
     "coordinates": "(55,70)",
     "description": "You are standing in a dark cave.",
     "room_id": 302,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "303": {
     "n": 361,
@@ -4268,8 +3949,7 @@
     "coordinates": "(54,69)",
     "description": "You are standing in a dark cave.",
     "room_id": 303,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "304": {
     "n": null,
@@ -4282,8 +3962,7 @@
     "coordinates": "(55,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 304,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "305": {
     "n": 365,
@@ -4296,13 +3975,7 @@
     "coordinates": "(54,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 305,
-    "exits": ["n", "s"],
-    "items": [
-      "tiny treasure",
-      "small treasure",
-      "small treasure",
-      "tiny treasure"
-    ]
+    "exits": ["n", "s"]
   },
   "306": {
     "n": null,
@@ -4315,8 +3988,7 @@
     "coordinates": "(70,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 306,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "307": {
     "n": 230,
@@ -4329,8 +4001,7 @@
     "coordinates": "(63,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 307,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "308": {
     "n": null,
@@ -4343,8 +4014,7 @@
     "coordinates": "(53,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 308,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "309": {
     "n": null,
@@ -4357,8 +4027,7 @@
     "coordinates": "(60,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 309,
-    "exits": ["s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "e", "w"]
   },
   "310": {
     "n": null,
@@ -4371,8 +4040,7 @@
     "coordinates": "(53,66)",
     "description": "You are standing in a dark cave.",
     "room_id": 310,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "311": {
     "n": null,
@@ -4385,8 +4053,7 @@
     "coordinates": "(60,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 311,
-    "exits": ["w"],
-    "items": ["tiny treasure", "shiny treasure"]
+    "exits": ["w"]
   },
   "312": {
     "n": 328,
@@ -4399,8 +4066,7 @@
     "coordinates": "(57,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 312,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "313": {
     "n": null,
@@ -4413,8 +4079,7 @@
     "coordinates": "(68,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 313,
-    "exits": ["w"],
-    "items": ["tiny treasure", "small treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "314": {
     "n": null,
@@ -4427,8 +4092,7 @@
     "coordinates": "(55,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 314,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "315": {
     "n": null,
@@ -4441,8 +4105,7 @@
     "coordinates": "(69,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 315,
-    "exits": ["w"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "316": {
     "n": 344,
@@ -4455,8 +4118,7 @@
     "coordinates": "(66,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 316,
-    "exits": ["n", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "w"]
   },
   "317": {
     "n": null,
@@ -4469,8 +4131,7 @@
     "coordinates": "(58,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 317,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "318": {
     "n": 281,
@@ -4483,8 +4144,7 @@
     "coordinates": "(59,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 318,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "319": {
     "n": 359,
@@ -4497,8 +4157,7 @@
     "coordinates": "(63,73)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 319,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "320": {
     "n": 348,
@@ -4511,8 +4170,7 @@
     "coordinates": "(53,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 320,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "321": {
     "n": null,
@@ -4525,8 +4183,7 @@
     "coordinates": "(62,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 321,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "322": {
     "n": 382,
@@ -4539,8 +4196,7 @@
     "coordinates": "(70,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 322,
-    "exits": ["n", "e", "w"],
-    "items": []
+    "exits": ["n", "e", "w"]
   },
   "323": {
     "n": null,
@@ -4553,8 +4209,7 @@
     "coordinates": "(70,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 323,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "324": {
     "n": 298,
@@ -4567,8 +4222,7 @@
     "coordinates": "(68,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 324,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "325": {
     "n": 353,
@@ -4581,8 +4235,7 @@
     "coordinates": "(59,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 325,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "326": {
     "n": null,
@@ -4595,8 +4248,7 @@
     "coordinates": "(61,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 326,
-    "exits": ["s", "w"],
-    "items": ["small treasure", "small treasure", "tiny treasure"]
+    "exits": ["s", "w"]
   },
   "327": {
     "n": null,
@@ -4609,8 +4261,7 @@
     "coordinates": "(70,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 327,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "328": {
     "n": 332,
@@ -4623,8 +4274,7 @@
     "coordinates": "(57,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 328,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "329": {
     "n": null,
@@ -4637,8 +4287,7 @@
     "coordinates": "(65,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 329,
-    "exits": ["w"],
-    "items": ["tiny treasure"]
+    "exits": ["w"]
   },
   "330": {
     "n": 369,
@@ -4651,8 +4300,7 @@
     "coordinates": "(52,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 330,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "331": {
     "n": null,
@@ -4665,8 +4313,7 @@
     "coordinates": "(67,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 331,
-    "exits": ["s", "e"],
-    "items": ["small treasure"]
+    "exits": ["s", "e"]
   },
   "332": {
     "n": 350,
@@ -4679,8 +4326,7 @@
     "coordinates": "(57,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 332,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "333": {
     "n": 309,
@@ -4693,8 +4339,7 @@
     "coordinates": "(60,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 333,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "334": {
     "n": 294,
@@ -4707,8 +4352,7 @@
     "coordinates": "(55,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 334,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "335": {
     "n": null,
@@ -4721,8 +4365,7 @@
     "coordinates": "(54,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 335,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "336": {
     "n": null,
@@ -4735,8 +4378,7 @@
     "coordinates": "(62,74)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 336,
-    "exits": ["s"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "337": {
     "n": null,
@@ -4749,8 +4391,7 @@
     "coordinates": "(61,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 337,
-    "exits": ["s"],
-    "items": ["small treasure"]
+    "exits": ["s"]
   },
   "338": {
     "n": null,
@@ -4763,8 +4404,7 @@
     "coordinates": "(71,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 338,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "339": {
     "n": null,
@@ -4777,8 +4417,7 @@
     "coordinates": "(53,68)",
     "description": "You are standing in a dark cave.",
     "room_id": 339,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "340": {
     "n": null,
@@ -4791,8 +4430,7 @@
     "coordinates": "(67,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 340,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "341": {
     "n": null,
@@ -4805,8 +4443,7 @@
     "coordinates": "(56,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 341,
-    "exits": ["s", "w"],
-    "items": ["tiny treasure", "small treasure", "tiny treasure"]
+    "exits": ["s", "w"]
   },
   "342": {
     "n": 326,
@@ -4819,8 +4456,7 @@
     "coordinates": "(61,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 342,
-    "exits": ["n", "s"],
-    "items": ["small treasure"]
+    "exits": ["n", "s"]
   },
   "343": {
     "n": null,
@@ -4833,8 +4469,7 @@
     "coordinates": "(53,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 343,
-    "exits": ["s", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["s", "w"]
   },
   "344": {
     "n": 392,
@@ -4847,8 +4482,7 @@
     "coordinates": "(66,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 344,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "345": {
     "n": null,
@@ -4861,8 +4495,7 @@
     "coordinates": "(64,73)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 345,
-    "exits": ["s", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "w"]
   },
   "346": {
     "n": null,
@@ -4875,8 +4508,7 @@
     "coordinates": "(53,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 346,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "347": {
     "n": 452,
@@ -4889,8 +4521,7 @@
     "coordinates": "(60,73)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 347,
-    "exits": ["n", "s", "e"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "348": {
     "n": null,
@@ -4903,8 +4534,7 @@
     "coordinates": "(53,65)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 348,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "349": {
     "n": 324,
@@ -4917,8 +4547,7 @@
     "coordinates": "(68,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 349,
-    "exits": ["n", "s", "e", "w"],
-    "items": []
+    "exits": ["n", "s", "e", "w"]
   },
   "350": {
     "n": 436,
@@ -4931,8 +4560,7 @@
     "coordinates": "(57,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 350,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "351": {
     "n": null,
@@ -4945,8 +4573,7 @@
     "coordinates": "(52,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 351,
-    "exits": ["s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "352": {
     "n": 349,
@@ -4959,8 +4586,7 @@
     "coordinates": "(68,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 352,
-    "exits": ["n", "s", "e"],
-    "items": []
+    "exits": ["n", "s", "e"]
   },
   "353": {
     "n": null,
@@ -4973,8 +4599,7 @@
     "coordinates": "(59,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 353,
-    "exits": ["s"],
-    "items": ["tiny treasure", "tiny treasure", "shiny treasure"]
+    "exits": ["s"]
   },
   "354": {
     "n": null,
@@ -4987,8 +4612,7 @@
     "coordinates": "(69,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 354,
-    "exits": ["w"],
-    "items": ["tiny treasure"]
+    "exits": ["w"]
   },
   "355": {
     "n": null,
@@ -5001,8 +4625,7 @@
     "coordinates": "(51,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 355,
-    "exits": ["e"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "356": {
     "n": null,
@@ -5015,8 +4638,7 @@
     "coordinates": "(67,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 356,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "357": {
     "n": null,
@@ -5029,8 +4651,7 @@
     "coordinates": "(58,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 357,
-    "exits": ["w"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "358": {
     "n": null,
@@ -5043,8 +4664,7 @@
     "coordinates": "(66,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 358,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "359": {
     "n": null,
@@ -5057,8 +4677,7 @@
     "coordinates": "(63,74)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 359,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "360": {
     "n": 256,
@@ -5071,8 +4690,7 @@
     "coordinates": "(69,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 360,
-    "exits": ["n", "e"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "e"]
   },
   "361": {
     "n": 408,
@@ -5085,8 +4703,7 @@
     "coordinates": "(54,70)",
     "description": "You are standing in a dark cave.",
     "room_id": 361,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "362": {
     "n": 352,
@@ -5099,8 +4716,7 @@
     "coordinates": "(68,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 362,
-    "exits": ["n", "s", "w"],
-    "items": []
+    "exits": ["n", "s", "w"]
   },
   "363": {
     "n": 372,
@@ -5113,8 +4729,7 @@
     "coordinates": "(56,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 363,
-    "exits": ["n", "e"],
-    "items": ["small treasure"]
+    "exits": ["n", "e"]
   },
   "364": {
     "n": 429,
@@ -5127,8 +4742,7 @@
     "coordinates": "(52,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 364,
-    "exits": ["n", "s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "e", "w"]
   },
   "365": {
     "n": null,
@@ -5141,8 +4755,7 @@
     "coordinates": "(54,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 365,
-    "exits": ["s"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "366": {
     "n": null,
@@ -5155,8 +4768,7 @@
     "coordinates": "(53,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 366,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "367": {
     "n": 111,
@@ -5169,8 +4781,7 @@
     "coordinates": "(64,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 367,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "368": {
     "n": null,
@@ -5183,8 +4794,7 @@
     "coordinates": "(56,69)",
     "description": "You are standing in a dark cave.",
     "room_id": 368,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "369": {
     "n": 400,
@@ -5197,8 +4807,7 @@
     "coordinates": "(52,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 369,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "370": {
     "n": 262,
@@ -5211,8 +4820,7 @@
     "coordinates": "(65,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 370,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "371": {
     "n": null,
@@ -5225,8 +4833,7 @@
     "coordinates": "(64,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 371,
-    "exits": ["s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "w"]
   },
   "372": {
     "n": 441,
@@ -5239,8 +4846,7 @@
     "coordinates": "(56,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 372,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "373": {
     "n": 307,
@@ -5253,8 +4859,7 @@
     "coordinates": "(63,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 373,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "374": {
     "n": null,
@@ -5267,8 +4872,7 @@
     "coordinates": "(58,71)",
     "description": "Here lies a shrine for Full-lifey, who captured the golden snitch and gained the power to warp between worlds with some help from his team and a solitary spy.",
     "room_id": 374,
-    "exits": ["e"],
-    "items": ["small treasure"]
+    "exits": ["e"]
   },
   "375": {
     "n": 345,
@@ -5281,8 +4885,7 @@
     "coordinates": "(64,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 375,
-    "exits": ["n", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e"]
   },
   "376": {
     "n": null,
@@ -5295,13 +4898,7 @@
     "coordinates": "(51,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 376,
-    "exits": ["e"],
-    "items": [
-      "small treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "small treasure"
-    ]
+    "exits": ["e"]
   },
   "377": {
     "n": 300,
@@ -5314,8 +4911,7 @@
     "coordinates": "(57,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 377,
-    "exits": ["n"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["n"]
   },
   "378": {
     "n": 333,
@@ -5328,8 +4924,7 @@
     "coordinates": "(60,47)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 378,
-    "exits": ["n"],
-    "items": ["shiny treasure", "small treasure"]
+    "exits": ["n"]
   },
   "379": {
     "n": 338,
@@ -5342,8 +4937,7 @@
     "coordinates": "(71,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 379,
-    "exits": ["n", "e"],
-    "items": []
+    "exits": ["n", "e"]
   },
   "380": {
     "n": 424,
@@ -5356,8 +4950,7 @@
     "coordinates": "(65,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 380,
-    "exits": ["n", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "w"]
   },
   "381": {
     "n": 364,
@@ -5370,8 +4963,7 @@
     "coordinates": "(52,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 381,
-    "exits": ["n", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "w"]
   },
   "382": {
     "n": null,
@@ -5384,8 +4976,7 @@
     "coordinates": "(70,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 382,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "383": {
     "n": null,
@@ -5398,8 +4989,7 @@
     "coordinates": "(51,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 383,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "384": {
     "n": null,
@@ -5412,8 +5002,7 @@
     "coordinates": "(69,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 384,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "385": {
     "n": null,
@@ -5426,8 +5015,7 @@
     "coordinates": "(65,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 385,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "386": {
     "n": null,
@@ -5440,8 +5028,7 @@
     "coordinates": "(70,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 386,
-    "exits": ["e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["e", "w"]
   },
   "387": {
     "n": 317,
@@ -5454,8 +5041,7 @@
     "coordinates": "(58,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 387,
-    "exits": ["n", "s", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "w"]
   },
   "388": {
     "n": null,
@@ -5468,8 +5054,7 @@
     "coordinates": "(71,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 388,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "389": {
     "n": null,
@@ -5482,8 +5067,7 @@
     "coordinates": "(56,51)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 389,
-    "exits": ["e"],
-    "items": ["tiny treasure", "small treasure"]
+    "exits": ["e"]
   },
   "390": {
     "n": null,
@@ -5496,8 +5080,7 @@
     "coordinates": "(67,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 390,
-    "exits": ["w"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "391": {
     "n": null,
@@ -5510,8 +5093,7 @@
     "coordinates": "(54,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 391,
-    "exits": ["s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "392": {
     "n": null,
@@ -5524,8 +5106,7 @@
     "coordinates": "(66,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 392,
-    "exits": ["s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e"]
   },
   "393": {
     "n": 334,
@@ -5538,8 +5119,7 @@
     "coordinates": "(55,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 393,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "394": {
     "n": null,
@@ -5552,8 +5132,7 @@
     "coordinates": "(51,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 394,
-    "exits": ["e"],
-    "items": ["small treasure", "small treasure"]
+    "exits": ["e"]
   },
   "395": {
     "n": null,
@@ -5566,8 +5145,7 @@
     "coordinates": "(72,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 395,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "396": {
     "n": 391,
@@ -5580,8 +5158,7 @@
     "coordinates": "(54,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 396,
-    "exits": ["n"],
-    "items": ["small treasure", "tiny treasure", "tiny treasure"]
+    "exits": ["n"]
   },
   "397": {
     "n": null,
@@ -5594,18 +5171,7 @@
     "coordinates": "(71,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 397,
-    "exits": ["w"],
-    "items": [
-      "tiny treasure",
-      "tiny treasure",
-      "shiny treasure",
-      "small treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "tiny treasure"
-    ]
+    "exits": ["w"]
   },
   "398": {
     "n": null,
@@ -5618,8 +5184,7 @@
     "coordinates": "(70,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 398,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "399": {
     "n": 362,
@@ -5632,8 +5197,7 @@
     "coordinates": "(68,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 399,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "400": {
     "n": null,
@@ -5646,13 +5210,7 @@
     "coordinates": "(52,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 400,
-    "exits": ["s"],
-    "items": [
-      "tiny treasure",
-      "small treasure",
-      "tiny treasure",
-      "tiny treasure"
-    ]
+    "exits": ["s"]
   },
   "401": {
     "n": null,
@@ -5665,8 +5223,7 @@
     "coordinates": "(67,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 401,
-    "exits": ["w"],
-    "items": ["small treasure", "small treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "402": {
     "n": null,
@@ -5679,8 +5236,7 @@
     "coordinates": "(53,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 402,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "403": {
     "n": 395,
@@ -5693,8 +5249,7 @@
     "coordinates": "(72,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 403,
-    "exits": ["n"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["n"]
   },
   "404": {
     "n": 481,
@@ -5707,8 +5262,7 @@
     "coordinates": "(58,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 404,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "405": {
     "n": 406,
@@ -5721,8 +5275,7 @@
     "coordinates": "(53,69)",
     "description": "You are standing in a dark cave.",
     "room_id": 405,
-    "exits": ["n", "e"],
-    "items": ["small treasure"]
+    "exits": ["n", "e"]
   },
   "406": {
     "n": null,
@@ -5735,8 +5288,7 @@
     "coordinates": "(53,70)",
     "description": "You are standing in a dark cave.",
     "room_id": 406,
-    "exits": ["s", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "w"]
   },
   "407": {
     "n": null,
@@ -5749,8 +5301,7 @@
     "coordinates": "(66,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 407,
-    "exits": ["s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "w"]
   },
   "408": {
     "n": 458,
@@ -5763,8 +5314,7 @@
     "coordinates": "(54,71)",
     "description": "You are standing in a dark cave.",
     "room_id": 408,
-    "exits": ["n", "s", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "w"]
   },
   "409": {
     "n": null,
@@ -5777,8 +5327,7 @@
     "coordinates": "(57,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 409,
-    "exits": ["e"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "410": {
     "n": null,
@@ -5791,8 +5340,7 @@
     "coordinates": "(61,74)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 410,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "411": {
     "n": null,
@@ -5805,8 +5353,7 @@
     "coordinates": "(59,69)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 411,
-    "exits": ["w"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "412": {
     "n": null,
@@ -5819,8 +5366,7 @@
     "coordinates": "(52,66)",
     "description": "You are standing in a dark cave.",
     "room_id": 412,
-    "exits": ["s", "e"],
-    "items": ["small treasure"]
+    "exits": ["s", "e"]
   },
   "413": {
     "n": 321,
@@ -5833,8 +5379,7 @@
     "coordinates": "(62,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 413,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "414": {
     "n": null,
@@ -5847,8 +5392,7 @@
     "coordinates": "(71,59)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 414,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "415": {
     "n": null,
@@ -5861,8 +5405,7 @@
     "coordinates": "(52,70)",
     "description": "You are standing in a dark cave.",
     "room_id": 415,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "416": {
     "n": null,
@@ -5875,8 +5418,7 @@
     "coordinates": "(70,62)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 416,
-    "exits": ["s"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "417": {
     "n": 387,
@@ -5889,8 +5431,7 @@
     "coordinates": "(58,47)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 417,
-    "exits": ["n"],
-    "items": ["tiny treasure"]
+    "exits": ["n"]
   },
   "418": {
     "n": 425,
@@ -5903,8 +5444,7 @@
     "coordinates": "(51,70)",
     "description": "You are standing in a dark cave.",
     "room_id": 418,
-    "exits": ["n", "s", "e"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s", "e"]
   },
   "419": {
     "n": null,
@@ -5917,22 +5457,20 @@
     "coordinates": "(51,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 419,
-    "exits": ["e"],
-    "items": ["shiny treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "420": {
     "n": null,
     "s": 444,
     "e": 213,
     "w": 437,
-    "title": "A misty room",
+    "title": "A floral room",
     "terrain": "NORMAL",
     "elevation": 0,
     "coordinates": "(52,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction. You think you smell lilacs, but can't be sure.",
     "room_id": 420,
-    "exits": ["s", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "e", "w"]
   },
   "421": {
     "n": 440,
@@ -5945,8 +5483,7 @@
     "coordinates": "(73,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 421,
-    "exits": ["n", "w"],
-    "items": []
+    "exits": ["n", "w"]
   },
   "422": {
     "n": 426,
@@ -5959,8 +5496,7 @@
     "coordinates": "(55,71)",
     "description": "You are standing in a dark cave.",
     "room_id": 422,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "423": {
     "n": null,
@@ -5973,8 +5509,7 @@
     "coordinates": "(53,71)",
     "description": "You are standing in a dark cave.",
     "room_id": 423,
-    "exits": ["e", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["e", "w"]
   },
   "424": {
     "n": null,
@@ -5987,8 +5522,7 @@
     "coordinates": "(65,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 424,
-    "exits": ["s", "e"],
-    "items": ["small treasure"]
+    "exits": ["s", "e"]
   },
   "425": {
     "n": null,
@@ -6001,8 +5535,7 @@
     "coordinates": "(51,71)",
     "description": "You are standing in a dark cave.",
     "room_id": 425,
-    "exits": ["s", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "w"]
   },
   "426": {
     "n": 457,
@@ -6015,8 +5548,7 @@
     "coordinates": "(55,72)",
     "description": "You are standing in a dark cave.",
     "room_id": 426,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "427": {
     "n": null,
@@ -6029,8 +5561,7 @@
     "coordinates": "(71,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 427,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "428": {
     "n": null,
@@ -6043,8 +5574,7 @@
     "coordinates": "(53,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 428,
-    "exits": ["e"],
-    "items": ["small treasure"]
+    "exits": ["e"]
   },
   "429": {
     "n": null,
@@ -6057,8 +5587,7 @@
     "coordinates": "(52,64)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 429,
-    "exits": ["s"],
-    "items": ["small treasure"]
+    "exits": ["s"]
   },
   "430": {
     "n": 443,
@@ -6071,8 +5600,7 @@
     "coordinates": "(72,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 430,
-    "exits": ["n", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "e", "w"]
   },
   "431": {
     "n": null,
@@ -6085,8 +5613,7 @@
     "coordinates": "(57,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 431,
-    "exits": ["n", "s", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "s", "w"]
   },
   "432": {
     "n": 342,
@@ -6099,13 +5626,7 @@
     "coordinates": "(61,47)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 432,
-    "exits": ["n"],
-    "items": [
-      "tiny treasure",
-      "tiny treasure",
-      "small treasure",
-      "tiny treasure"
-    ]
+    "exits": ["n"]
   },
   "433": {
     "n": null,
@@ -6118,8 +5639,7 @@
     "coordinates": "(71,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 433,
-    "exits": ["s", "e", "w"],
-    "items": []
+    "exits": ["s", "e", "w"]
   },
   "434": {
     "n": 370,
@@ -6132,8 +5652,7 @@
     "coordinates": "(65,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 434,
-    "exits": ["n"],
-    "items": ["tiny treasure", "tiny treasure", "tiny treasure"]
+    "exits": ["n"]
   },
   "435": {
     "n": null,
@@ -6146,8 +5665,7 @@
     "coordinates": "(71,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 435,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "436": {
     "n": null,
@@ -6160,8 +5678,7 @@
     "coordinates": "(57,73)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 436,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "437": {
     "n": null,
@@ -6174,8 +5691,7 @@
     "coordinates": "(51,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 437,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "438": {
     "n": null,
@@ -6188,8 +5704,7 @@
     "coordinates": "(71,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 438,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "439": {
     "n": null,
@@ -6202,8 +5717,7 @@
     "coordinates": "(73,57)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 439,
-    "exits": ["w"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "440": {
     "n": null,
@@ -6216,8 +5730,7 @@
     "coordinates": "(73,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 440,
-    "exits": ["s", "w"],
-    "items": ["small treasure"]
+    "exits": ["s", "w"]
   },
   "441": {
     "n": null,
@@ -6230,8 +5743,7 @@
     "coordinates": "(56,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 441,
-    "exits": ["s"],
-    "items": ["small treasure", "tiny treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "442": {
     "n": 347,
@@ -6244,15 +5756,7 @@
     "coordinates": "(60,72)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 442,
-    "exits": ["n"],
-    "items": [
-      "small treasure",
-      "shiny treasure",
-      "shiny treasure",
-      "small treasure",
-      "tiny treasure",
-      "tiny treasure"
-    ]
+    "exits": ["n"]
   },
   "443": {
     "n": null,
@@ -6265,8 +5769,7 @@
     "coordinates": "(72,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 443,
-    "exits": ["s", "e"],
-    "items": ["small treasure"]
+    "exits": ["s", "e"]
   },
   "444": {
     "n": 420,
@@ -6279,8 +5782,7 @@
     "coordinates": "(52,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 444,
-    "exits": ["n", "w"],
-    "items": ["shiny treasure"]
+    "exits": ["n", "w"]
   },
   "445": {
     "n": 447,
@@ -6293,8 +5795,7 @@
     "coordinates": "(52,68)",
     "description": "You are standing in a dark cave.",
     "room_id": 445,
-    "exits": ["n", "e", "w"],
-    "items": ["small treasure"]
+    "exits": ["n", "e", "w"]
   },
   "446": {
     "n": null,
@@ -6307,8 +5808,7 @@
     "coordinates": "(68,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 446,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "447": {
     "n": null,
@@ -6321,8 +5821,7 @@
     "coordinates": "(52,69)",
     "description": "You are standing in a dark cave.",
     "room_id": 447,
-    "exits": ["s"],
-    "items": ["small treasure", "shiny treasure"]
+    "exits": ["s"]
   },
   "448": {
     "n": null,
@@ -6335,8 +5834,7 @@
     "coordinates": "(51,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 448,
-    "exits": ["e"],
-    "items": ["tiny treasure"]
+    "exits": ["e"]
   },
   "449": {
     "n": 341,
@@ -6349,13 +5847,7 @@
     "coordinates": "(56,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 449,
-    "exits": ["n"],
-    "items": [
-      "small treasure",
-      "shiny treasure",
-      "tiny treasure",
-      "tiny treasure"
-    ]
+    "exits": ["n"]
   },
   "450": {
     "n": null,
@@ -6368,8 +5860,7 @@
     "coordinates": "(51,68)",
     "description": "You are standing in a dark cave.",
     "room_id": 450,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "451": {
     "n": null,
@@ -6382,8 +5873,7 @@
     "coordinates": "(52,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 451,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "452": {
     "n": null,
@@ -6396,8 +5886,7 @@
     "coordinates": "(60,74)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 452,
-    "exits": ["s"],
-    "items": ["tiny treasure"]
+    "exits": ["s"]
   },
   "453": {
     "n": null,
@@ -6410,8 +5899,7 @@
     "coordinates": "(51,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 453,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "454": {
     "n": 470,
@@ -6424,8 +5912,7 @@
     "coordinates": "(52,71)",
     "description": "You are standing in a dark cave.",
     "room_id": 454,
-    "exits": ["n", "e"],
-    "items": ["small treasure"]
+    "exits": ["n", "e"]
   },
   "455": {
     "n": 433,
@@ -6438,8 +5925,7 @@
     "coordinates": "(71,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 455,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "456": {
     "n": null,
@@ -6452,8 +5938,7 @@
     "coordinates": "(52,67)",
     "description": "You are standing on grass and surrounded by a dense mist. You notice a cave entrance to the east and cliffside landmark to the west.",
     "room_id": 456,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "457": {
     "n": 461,
@@ -6466,8 +5951,7 @@
     "coordinates": "(55,73)",
     "description": "You are standing in a dark cave.",
     "room_id": 457,
-    "exits": ["n", "s"],
-    "items": []
+    "exits": ["n", "s"]
   },
   "458": {
     "n": null,
@@ -6480,8 +5964,7 @@
     "coordinates": "(54,72)",
     "description": "You are standing in a dark cave.",
     "room_id": 458,
-    "exits": ["s", "w"],
-    "items": []
+    "exits": ["s", "w"]
   },
   "459": {
     "n": null,
@@ -6494,8 +5977,7 @@
     "coordinates": "(53,72)",
     "description": "You are standing in a dark cave.",
     "room_id": 459,
-    "exits": ["e"],
-    "items": ["tiny treasure"]
+    "exits": ["e"]
   },
   "460": {
     "n": null,
@@ -6508,8 +5990,7 @@
     "coordinates": "(72,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 460,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "461": {
     "n": null,
@@ -6522,8 +6003,7 @@
     "coordinates": "(55,74)",
     "description": "You are standing before a glowing shrine to a Linh, the Swift. She looks quite fast.",
     "room_id": 461,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "462": {
     "n": null,
@@ -6536,8 +6016,7 @@
     "coordinates": "(67,70)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 462,
-    "exits": ["w"],
-    "items": ["tiny treasure", "tiny treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "463": {
     "n": null,
@@ -6550,8 +6029,7 @@
     "coordinates": "(67,49)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 463,
-    "exits": ["s", "e"],
-    "items": []
+    "exits": ["s", "e"]
   },
   "464": {
     "n": 453,
@@ -6564,8 +6042,7 @@
     "coordinates": "(51,60)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 464,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "465": {
     "n": null,
@@ -6578,8 +6055,7 @@
     "coordinates": "(72,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 465,
-    "exits": ["e", "w"],
-    "items": ["small treasure"]
+    "exits": ["e", "w"]
   },
   "466": {
     "n": null,
@@ -6592,8 +6068,7 @@
     "coordinates": "(69,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 466,
-    "exits": ["s", "e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["s", "e", "w"]
   },
   "467": {
     "n": 399,
@@ -6606,8 +6081,7 @@
     "coordinates": "(68,47)",
     "description": "You see a sign before you that reads:\n\n'You have found Pirate Ry's. Send a `change_name` request and I'll change your identity to whatever you wish... for a price.'",
     "room_id": 467,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "468": {
     "n": 463,
@@ -6620,8 +6094,7 @@
     "coordinates": "(67,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 468,
-    "exits": ["n"],
-    "items": ["tiny treasure"]
+    "exits": ["n"]
   },
   "469": {
     "n": null,
@@ -6634,8 +6107,7 @@
     "coordinates": "(50,71)",
     "description": "You are standing in a dark cave.",
     "room_id": 469,
-    "exits": ["e"],
-    "items": ["small treasure"]
+    "exits": ["e"]
   },
   "470": {
     "n": null,
@@ -6648,8 +6120,7 @@
     "coordinates": "(52,72)",
     "description": "You are standing in a dark cave.",
     "room_id": 470,
-    "exits": ["s"],
-    "items": ["small treasure", "tiny treasure", "tiny treasure"]
+    "exits": ["s"]
   },
   "471": {
     "n": null,
@@ -6662,8 +6133,7 @@
     "coordinates": "(73,58)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 471,
-    "exits": ["w"],
-    "items": ["tiny treasure"]
+    "exits": ["w"]
   },
   "472": {
     "n": null,
@@ -6676,8 +6146,7 @@
     "coordinates": "(70,68)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 472,
-    "exits": ["w"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "473": {
     "n": null,
@@ -6690,8 +6159,7 @@
     "coordinates": "(66,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 473,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "474": {
     "n": 418,
@@ -6704,8 +6172,7 @@
     "coordinates": "(51,69)",
     "description": "You are standing in a dark cave.",
     "room_id": 474,
-    "exits": ["n"],
-    "items": ["small treasure"]
+    "exits": ["n"]
   },
   "475": {
     "n": 371,
@@ -6718,8 +6185,7 @@
     "coordinates": "(64,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 475,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "476": {
     "n": null,
@@ -6732,8 +6198,7 @@
     "coordinates": "(72,61)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 476,
-    "exits": ["e"],
-    "items": ["shiny treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "477": {
     "n": null,
@@ -6746,8 +6211,7 @@
     "coordinates": "(72,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 477,
-    "exits": ["e", "w"],
-    "items": []
+    "exits": ["e", "w"]
   },
   "478": {
     "n": null,
@@ -6760,8 +6224,7 @@
     "coordinates": "(51,53)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 478,
-    "exits": ["e"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "479": {
     "n": null,
@@ -6774,8 +6237,7 @@
     "coordinates": "(68,63)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 479,
-    "exits": ["w"],
-    "items": ["small treasure", "tiny treasure"]
+    "exits": ["w"]
   },
   "480": {
     "n": 373,
@@ -6788,8 +6250,7 @@
     "coordinates": "(63,47)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 480,
-    "exits": ["n"],
-    "items": ["small treasure"]
+    "exits": ["n"]
   },
   "481": {
     "n": null,
@@ -6802,8 +6263,7 @@
     "coordinates": "(58,73)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 481,
-    "exits": ["s"],
-    "items": []
+    "exits": ["s"]
   },
   "482": {
     "n": 393,
@@ -6816,8 +6276,7 @@
     "coordinates": "(55,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 482,
-    "exits": ["n"],
-    "items": ["tiny treasure", "small treasure", "shiny treasure"]
+    "exits": ["n"]
   },
   "483": {
     "n": null,
@@ -6830,8 +6289,7 @@
     "coordinates": "(73,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 483,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "484": {
     "n": 475,
@@ -6844,14 +6302,7 @@
     "coordinates": "(64,47)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 484,
-    "exits": ["n"],
-    "items": [
-      "small treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "small treasure",
-      "tiny treasure"
-    ]
+    "exits": ["n"]
   },
   "485": {
     "n": null,
@@ -6864,8 +6315,7 @@
     "coordinates": "(69,50)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 485,
-    "exits": ["w"],
-    "items": []
+    "exits": ["w"]
   },
   "486": {
     "n": 466,
@@ -6878,8 +6328,7 @@
     "coordinates": "(69,67)",
     "description": "Before you lies a radiant book of knowledge, on a pedestal inlaid with Lambda Coins. Below, a plaque reads:  Herin exists knowledge gathered by Arron of Web19/CS21. Always seek to learn. Ask questions. Don't panic, bring a towel.",
     "room_id": 486,
-    "exits": ["n"],
-    "items": ["tiny treasure"]
+    "exits": ["n"]
   },
   "487": {
     "n": 318,
@@ -6892,8 +6341,7 @@
     "coordinates": "(59,47)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 487,
-    "exits": ["n", "s"],
-    "items": ["tiny treasure"]
+    "exits": ["n", "s"]
   },
   "488": {
     "n": 412,
@@ -6906,8 +6354,7 @@
     "coordinates": "(52,65)",
     "description": "You are standing in a dark cave.",
     "room_id": 488,
-    "exits": ["n"],
-    "items": ["shiny treasure", "small treasure", "small treasure"]
+    "exits": ["n"]
   },
   "489": {
     "n": 487,
@@ -6920,8 +6367,7 @@
     "coordinates": "(59,46)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 489,
-    "exits": ["n"],
-    "items": ["tiny treasure"]
+    "exits": ["n"]
   },
   "490": {
     "n": null,
@@ -6934,8 +6380,7 @@
     "coordinates": "(51,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 490,
-    "exits": ["e", "w"],
-    "items": ["tiny treasure"]
+    "exits": ["e", "w"]
   },
   "491": {
     "n": 351,
@@ -6948,27 +6393,20 @@
     "coordinates": "(52,52)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 491,
-    "exits": ["n"],
-    "items": [
-      "shiny treasure",
-      "tiny treasure",
-      "tiny treasure",
-      "tiny treasure"
-    ]
+    "exits": ["n"]
   },
   "492": {
     "n": null,
     "s": null,
     "e": 431,
     "w": null,
-    "title": "A misty room",
+    "title": "Sandofsky's Sanctum",
     "terrain": "NORMAL",
     "elevation": 0,
     "coordinates": "(56,48)",
-    "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+    "description": "Before you stands a statue of Sandofsky, musclebound hero from times of old: Cold as ice and twice as smooth. You feel a chill as thoughts of algorithms fill the air. Before the statue, a plaque reads, \"Being a Hero, sometimes you must Recall to Zero.\"",
     "room_id": 492,
-    "exits": ["e"],
-    "items": ["tiny treasure"]
+    "exits": ["e"]
   },
   "493": {
     "n": null,
@@ -6981,8 +6419,7 @@
     "coordinates": "(50,54)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 493,
-    "exits": ["e"],
-    "items": ["tiny treasure", "tiny treasure"]
+    "exits": ["e"]
   },
   "494": {
     "n": null,
@@ -6995,8 +6432,7 @@
     "coordinates": "(67,71)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 494,
-    "exits": ["w"],
-    "items": ["tiny treasure"]
+    "exits": ["w"]
   },
   "495": {
     "n": null,
@@ -7009,8 +6445,7 @@
     "coordinates": "(50,58)",
     "description": "A strange machine stands in this room.  There is a large opening on the top.  A placard reads, \"Test your luck!  One item and one Lambdacoin!\"",
     "room_id": 495,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   },
   "496": {
     "n": 407,
@@ -7023,8 +6458,7 @@
     "coordinates": "(66,48)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 496,
-    "exits": ["n"],
-    "items": []
+    "exits": ["n"]
   },
   "497": {
     "n": null,
@@ -7037,15 +6471,7 @@
     "coordinates": "(50,55)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 497,
-    "exits": ["e"],
-    "items": [
-      "shiny treasure",
-      "small treasure",
-      "tiny treasure",
-      "shiny treasure",
-      "tiny treasure",
-      "small treasure"
-    ]
+    "exits": ["e"]
   },
   "498": {
     "n": null,
@@ -7058,8 +6484,7 @@
     "coordinates": "(73,56)",
     "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
     "room_id": 498,
-    "exits": ["w"],
-    "items": ["shiny treasure", "small treasure"]
+    "exits": ["w"]
   },
   "499": {
     "n": null,
@@ -7072,7 +6497,6 @@
     "coordinates": "(51,67)",
     "description": "You see a moss-topped gravestone which reads: 'Here lies Glasowyn of Web17/Labs12/CS18, who was crushed under the weight of her own gold.' There doesn't seem to be any gold around, but marks in the dirt suggest that someone has knelt there, perhaps in prayer.",
     "room_id": 499,
-    "exits": ["e"],
-    "items": []
+    "exits": ["e"]
   }
 }
