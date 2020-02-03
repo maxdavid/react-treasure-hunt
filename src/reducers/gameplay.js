@@ -52,8 +52,11 @@ import {
   START_WARP,
   WARP_SUCCESS,
   WARP_ERROR,
+  START_RECALL,
+  RECALL_SUCCESS,
+  RECALL_ERROR,
   SET_COOLDOWN_LOCK,
-  SET_CURRENT_ACTION
+  SET_CURRENT_ACTION,
 } from '../actions';
 
 /* 
@@ -89,6 +92,7 @@ export const gameplayReducer = (state, { type, payload }) => {
     case START_ITEM_GRAB:
     case START_MOVE:
     case START_WARP:
+    case START_RECALL:
     case START_DASH:
     case START_FLIGHT:
     case START_EXAMINE:
@@ -121,6 +125,7 @@ export const gameplayReducer = (state, { type, payload }) => {
     case FLYING_SUCCESS:
     case DASH_SUCCESS:
     case WARP_SUCCESS:
+    case RECALL_SUCCESS:
     case SET_COOLDOWN_LOCK:
     case SET_CURRENT_ACTION:
       return {
@@ -145,6 +150,7 @@ export const gameplayReducer = (state, { type, payload }) => {
     case FLYING_ERROR:
     case DASH_ERROR:
     case WARP_ERROR:
+    case RECALL_ERROR:
       return {
         ...state,
         isLoading: false,

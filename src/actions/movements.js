@@ -103,3 +103,22 @@ export const warp = dispatch => {
       dispatch({ type: WARP_ERROR, payload: err.response.message });
     });
 };
+
+export const START_RECALL = 'START_RECALL';
+export const RECALL_SUCCESS = 'RECALL_SUCCESS';
+export const RECALL_ERROR = 'RECALL_ERROR';
+
+export const recall = dispatch => {
+  dispatch({ type: START_RECALL });
+  return axiosWithAuth()
+    .post('adv/recall/')
+    .then(res => {
+      console.log(res.data.messages, 'cooldown:', res.data.cooldown);
+      dispatch({ type: RECALL_SUCCESS, payload: res.data });
+      return res.data;
+    })
+    .catch(err => {
+      console.log('error', err.response);
+      dispatch({ type: RECALL_ERROR, payload: err.response.message });
+    });
+};
