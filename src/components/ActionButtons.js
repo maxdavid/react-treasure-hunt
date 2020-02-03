@@ -4,7 +4,7 @@ import { useStateValue } from '../hooks/useStateValue';
 
 import { sleep } from '../utility/randomWalk';
 import { warp, setCooldownLock, setCurrentAction } from '../actions';
-import { mining, snitching, darkWorld } from '../utility';
+import { mining, snitching, itemFinder, darkWorld } from '../utility';
 
 export const ActionButtons = props => {
   const [{ gameplay }, dispatch] = useStateValue();
@@ -51,11 +51,23 @@ export const ActionButtons = props => {
       >
         Go to chosen room
       </button> */}
-      <button
+      {/* <button
         disabled={!gameplay.abilities.includes('warp')}
         onClick={() => warpCooldown(dispatch)}
       >
         Warp
+      </button> */}
+      <button
+        onClick={() =>
+          itemFinder(
+            gameplay.strength - 11,
+            gameplay.speed - 9,
+            dispatch,
+            gameplay.room_id
+          )
+        }
+      >
+        Item Finder
       </button>
       <button
         onClick={() => mining(gameplay.room_id, dispatch)}

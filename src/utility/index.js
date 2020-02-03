@@ -6,3 +6,4 @@ export * from './snitching';
 export * from './traversal';
 export * from './darkWorld';
 export * from './getPlayerInfo';
+export * from './itemFinder';
