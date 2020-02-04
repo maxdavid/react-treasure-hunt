@@ -10,7 +10,9 @@ export const ActionButtons = props => {
   const [{ gameplay }, dispatch] = useStateValue();
   const [destinationRoom, setDestinationRoom] = useState('');
   const [desiredTreasure, setDesiredTreasure] = useState('');
-  let reason = gameplay.room_id < 500 ? 'mining' : 'snitching';
+  const hasFly = gameplay.abilities.includes('fly');
+  const hasDash = gameplay.abilities.includes('dash');
+  const hasRecall = gameplay.abilities.includes('recall');
 
   const warpCooldown = async dispatch => {
     setCooldownLock(true, dispatch);
@@ -70,14 +72,18 @@ export const ActionButtons = props => {
         Item Finder
       </button>
       <button
-        onClick={() => mining(gameplay.room_id, dispatch)}
+        onClick={() =>
+          mining(gameplay.room_id, dispatch, hasFly, hasDash, hasRecall)
+        }
         disabled={gameplay.name.match(/^User \d/)}
       >
         Mine Lambda Coins
       </button>
       <button
         disabled={!gameplay.abilities.includes('warp')}
-        onClick={() => snitching(gameplay.room_id, dispatch)}
+        onClick={() =>
+          snitching(gameplay.room_id, dispatch, hasFly, hasDash, hasRecall)
+        }
       >
         Find Golden Snitches
       </button>

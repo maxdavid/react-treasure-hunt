@@ -1,19 +1,32 @@
 import { sha256 } from 'js-sha256';
 import { sleep } from './randomWalk';
-import { getProof, mine, examine, setCurrentAction } from '../actions';
+import { getProof, mine, examine, setCurrentAction, recall } from '../actions';
 import { shortestPath } from './shortestPath';
 import { CPU } from './cpu';
 
-export const mining = async (currRoom, dispatch) => {
+export const mining = async (
+  currRoom,
+  dispatch,
+  hasFly = true,
+  hasDash = true,
+  hasRecall = true
+) => {
   setCurrentAction('mining', dispatch);
   let count = 0;
 
   while (true) {
-    await shortestPath(currRoom, 55, dispatch);
+    if (hasRecall) {
+      let recallAction = await recall(dispatch);
+      sleep(recallAction.cooldown);
+      await shortestPath(0, 55, dispatch, hasFly, hasDash);
+    } else await shortestPath(currRoom, 55, dispatch, hasFly, hasDash);
+
     let { description, cooldown } = await examine(dispatch, { name: 'well' });
     sleep(cooldown);
+
     currRoom = ls8(description);
-    await shortestPath(55, currRoom, dispatch);
+    await shortestPath(55, currRoom, dispatch, hasFly, hasDash);
+
     while (true) {
       let lastProof = await getProof(dispatch);
       let { difficulty, proof } = lastProof;
@@ -25,7 +38,7 @@ export const mining = async (currRoom, dispatch) => {
         sleep(miningResult.cooldown);
       } else {
         ++count;
-        dispatch({type: "increment coin count"})
+        dispatch({ type: 'increment coin count' });
         console.log(`${count} Lambda coin mined`);
         sleep(miningResult.cooldown);
         break;

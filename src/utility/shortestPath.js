@@ -24,9 +24,10 @@ export const shortestPath = async (
   currRoom,
   destination,
   dispatch,
-  reason = 'mining'
+  hasFly = true,
+  hasDash = true
 ) => {
-  let map = reason === 'snitching' ? darkWorld : worldMap;
+  let map = currRoom >= 500 ? darkWorld : worldMap;
   let path = getPath(currRoom, destination, map);
   let newRoom = null;
   let startingRoom = path.shift();
@@ -38,11 +39,11 @@ export const shortestPath = async (
       [...path],
       map
     );
-    if (dashPath.length > 2) {
+    if (hasDash && dashPath.length > 2) {
       newRoom = await dash(dispatch, {
         direction: dashDirection,
         num_rooms: `${dashPath.length}`,
-        next_room_ids: `${dashPath}`
+        next_room_ids: `${dashPath}`,
       });
       path = newPath;
       nextRoom = ['-', dashPath[dashPath.length - 1]];
@@ -50,15 +51,15 @@ export const shortestPath = async (
       nextRoom = path.shift();
       let terrain = map[nextRoom[1]].terrain;
 
-      if (terrain === 'CAVE') {
+      if (!hasFly || terrain === 'CAVE') {
         newRoom = await move(dispatch, {
           direction: nextRoom[0],
-          next_room_id: `${nextRoom[1]}`
+          next_room_id: `${nextRoom[1]}`,
         });
       } else {
         newRoom = await fly(dispatch, {
           direction: nextRoom[0],
-          next_room_id: `${nextRoom[1]}`
+          next_room_id: `${nextRoom[1]}`,
         });
       }
     }
