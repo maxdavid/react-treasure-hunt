@@ -1,6 +1,14 @@
 import worldMap from '../components/assets/map';
 import { darkWorld } from './darkWorld';
-import { move, fly, grabItem, examine } from '../actions';
+import {
+  move,
+  fly,
+  grabItem,
+  examine,
+  sellTreasure,
+  checkStatus,
+  recall,
+} from '../actions';
 
 // Random walker to find new items
 
@@ -26,23 +34,43 @@ export const itemFinder = async (
   desiredStrength,
   desiredSpeed,
   dispatch,
-  start_room_id
+  start_room_id,
+  findTreasure = false,
+  autoSell = true
 ) => {
   let room_id = start_room_id;
   console.log('Looking for boots with at least', desiredSpeed, 'speed');
   console.log('Looking for jacket with at least', desiredStrength, 'strength');
+  if (findTreasure) console.log('Looking for treasure');
+  if (autoSell) console.log('AutoSell is ON');
+  if (findTreasure && !autoSell)
+    console.log(
+      'AutoSell is OFF. Will not automatically sell treasure if overencumbered.'
+    );
+
   while (true) {
+    let { strength, encumbrance, cooldown } = await checkStatus(dispatch);
+    sleep(cooldown);
+
+    if (autoSell && encumbrance >= strength) {
+      console.log('Overencumbered!! Navigating to shop to sell treasure');
+      await autoSellTreasure(room_id, dispatch);
+      room_id = 1;
+    }
+
     let map = room_id >= 500 ? darkWorld : worldMap;
     let rando = Math.floor(Math.random() * Object.keys(map).length);
     rando += room_id >= 500 ? 500 : 0;
     let destRoom = map[rando].room_id;
     console.log('Navigating from room', room_id, 'to', destRoom);
-    let pathfinder = await shortestPath(
+    await shortestPath(
       room_id,
       destRoom,
       dispatch,
       desiredStrength,
-      desiredSpeed
+      desiredSpeed,
+      true,
+      findTreasure
     );
 
     room_id = destRoom;
@@ -54,7 +82,10 @@ export const shortestPath = async (
   destination,
   dispatch,
   desiredStrength,
-  desiredSpeed
+  desiredSpeed,
+  pickUpItems = true,
+  findTreasure = false,
+  isEncumbered = false
 ) => {
   let map = currRoom >= 500 ? darkWorld : worldMap;
   let path = getPath(currRoom, destination, map);
@@ -65,7 +96,7 @@ export const shortestPath = async (
     nextRoom = path.shift();
     let terrain = map[nextRoom[1]].terrain;
 
-    if (terrain === 'CAVE') {
+    if (isEncumbered || terrain === 'CAVE') {
       newRoom = await move(dispatch, {
         direction: nextRoom[0],
         next_room_id: `${nextRoom[1]}`,
@@ -77,9 +108,15 @@ export const shortestPath = async (
       });
     }
     sleep(newRoom.cooldown);
-    if (newRoom.items.length) {
+    if (pickUpItems && newRoom.items.length) {
       console.log(newRoom.items);
-      await grabItems(newRoom.items, desiredStrength, desiredSpeed, dispatch);
+      await grabItems(
+        newRoom.items,
+        desiredStrength,
+        desiredSpeed,
+        dispatch,
+        findTreasure
+      );
     }
   }
   return;
@@ -118,9 +155,20 @@ const getNeighbors = (roomNumber, map) => {
   return neighbors;
 };
 
-async function grabItems(items, desiredStrength, desiredSpeed, dispatch) {
+async function grabItems(
+  items,
+  desiredStrength,
+  desiredSpeed,
+  dispatch,
+  findTreasure = false
+) {
   for (let i = 0; i < items.length; i++) {
     let item = items[i];
+    if (findTreasure && item.includes('treasure')) {
+      console.log('Grabbing', item);
+      let itemGrab = await grabItem(dispatch, { name: item });
+      sleep(itemGrab.cooldown);
+    }
     if (!item.includes('treasure')) {
       let itemInfo = await examine(dispatch, { name: item });
       sleep(itemInfo.cooldown);
@@ -151,9 +199,30 @@ async function grabItems(items, desiredStrength, desiredSpeed, dispatch) {
       }
     }
   }
-  let itemGrab = await grabItem(dispatch, { name: 'treasure' });
-  sleep(itemGrab.cooldown);
+
   return;
+}
+
+async function autoSellTreasure(currRoom, dispatch) {
+  let status = await checkStatus(dispatch);
+  sleep(status.cooldown);
+  let inventory = status.inventory;
+
+  if (status.abilities.includes('recall')) {
+    let { cooldown } = await recall(dispatch);
+    sleep(cooldown);
+    currRoom = 0;
+  }
+  await shortestPath(currRoom, 1, dispatch, 0, 0, false, false, true);
+
+  for (let i = 0; i < inventory.length; i++) {
+    const item = inventory[i];
+    if (item.includes('treasure')) {
+      let sell = await sellTreasure(dispatch);
+      console.log(sell.messages);
+      sleep(sell.cooldown);
+    }
+  }
 }
 
 function find_options(exits, data) {

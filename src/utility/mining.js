@@ -9,7 +9,8 @@ export const mining = async (
   dispatch,
   hasFly = true,
   hasDash = true,
-  hasRecall = true
+  hasRecall = true,
+  isEncumbered = false
 ) => {
   setCurrentAction('mining', dispatch);
   let count = 0;
@@ -18,14 +19,15 @@ export const mining = async (
     if (hasRecall) {
       let recallAction = await recall(dispatch);
       sleep(recallAction.cooldown);
-      await shortestPath(0, 55, dispatch, hasFly, hasDash);
-    } else await shortestPath(currRoom, 55, dispatch, hasFly, hasDash);
+      await shortestPath(0, 55, dispatch, hasFly, hasDash, isEncumbered);
+    } else
+      await shortestPath(currRoom, 55, dispatch, hasFly, hasDash, isEncumbered);
 
     let { description, cooldown } = await examine(dispatch, { name: 'well' });
     sleep(cooldown);
 
     currRoom = ls8(description);
-    await shortestPath(55, currRoom, dispatch, hasFly, hasDash);
+    await shortestPath(55, currRoom, dispatch, hasFly, hasDash, isEncumbered);
 
     while (true) {
       let lastProof = await getProof(dispatch);

@@ -25,7 +25,8 @@ export const shortestPath = async (
   destination,
   dispatch,
   hasFly = true,
-  hasDash = true
+  hasDash = true,
+  isEncumbered = false
 ) => {
   let map = currRoom >= 500 ? darkWorld : worldMap;
   let path = getPath(currRoom, destination, map);
@@ -51,7 +52,7 @@ export const shortestPath = async (
       nextRoom = path.shift();
       let terrain = map[nextRoom[1]].terrain;
 
-      if (!hasFly || terrain === 'CAVE') {
+      if (!hasFly || isEncumbered || terrain === 'CAVE') {
         newRoom = await move(dispatch, {
           direction: nextRoom[0],
           next_room_id: `${nextRoom[1]}`,

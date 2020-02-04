@@ -65,7 +65,9 @@ export const ActionButtons = props => {
             gameplay.strength - 11,
             gameplay.speed - 9,
             dispatch,
-            gameplay.room_id
+            gameplay.room_id,
+            true,
+            true
           )
         }
       >

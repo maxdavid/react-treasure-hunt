@@ -33,7 +33,7 @@ Selecting `Mine Lambda Coins` or `Find Golden Snitches` will set the client into
 ###### Internal Fixes
 
 - Properly parse cooldown from bad API calls
-- Automatically detect if player has unlocked _fly_ and _dash_
+- ~~Automatically detect if player has unlocked _fly_ and _dash_~~
 - Override API key (currently non-functional)
 - Auto-reconnect if client connects too quickly for cooldown (currently needs a manual page refresh)
 

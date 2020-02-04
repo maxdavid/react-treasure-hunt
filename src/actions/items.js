@@ -54,10 +54,10 @@ export const START_TREASURE_SELL = 'START_TREASURE_SELL';
 export const TREASURE_SOLD = 'TREASURE_SOLD';
 export const TREASURE_SELL_ERROR = 'TREASURE_SELL_ERROR';
 
-export const sellTreasure = dispatch => {
+export const sellTreasure = (dispatch, name = 'treasure') => {
   dispatch({ type: START_TREASURE_SELL });
   return axiosWithAuth()
-    .post('adv/sell/', { name: 'treasure', confirm: 'yes' })
+    .post('adv/sell/', { name: name, confirm: 'yes' })
     .then(res => {
       dispatch({ type: TREASURE_SOLD, payload: res.data });
       return res.data;
