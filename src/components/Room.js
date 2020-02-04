@@ -10,11 +10,11 @@ export const Room = props => {
     let split = coords.split(',');
     return [
       parseInt(split[0].slice(1), 10),
-      parseInt(split[1].slice(0, -1), 10)
+      parseInt(split[1].slice(0, -1), 10),
     ];
   };
 
-  const specialRooms = [1, 22, 55, 374, 461, 467, 486, 495, 499];
+  const specialRooms = [1, 22, 55, 374, 461, 467, 486, 492, 495, 499];
 
   const navigate = async (curr, dest, dispatch, reason) => {
     setCurrentAction('navigating', dispatch);
@@ -51,7 +51,7 @@ export const Room = props => {
           dark={props.dark}
           player={props.player}
           aria-label={props.title}
-          data-balloon-pos='up'
+          data-balloon-pos="up"
           data-balloon-blunt
         >
           {props.room_id}
