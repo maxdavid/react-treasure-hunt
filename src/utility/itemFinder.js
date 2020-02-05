@@ -49,15 +49,6 @@ export const itemFinder = async (
     );
 
   while (true) {
-    let { strength, encumbrance, cooldown } = await checkStatus(dispatch);
-    sleep(cooldown);
-
-    if (autoSell && encumbrance >= strength) {
-      console.log('Overencumbered!! Navigating to shop to sell treasure');
-      await autoSellTreasure(room_id, dispatch);
-      room_id = 1;
-    }
-
     let map = room_id >= 500 ? darkWorld : worldMap;
     let rando = Math.floor(Math.random() * Object.keys(map).length);
     rando += room_id >= 500 ? 500 : 0;
@@ -74,6 +65,15 @@ export const itemFinder = async (
     );
 
     room_id = destRoom;
+
+    let { strength, encumbrance, cooldown } = await checkStatus(dispatch);
+    sleep(cooldown);
+
+    if (autoSell && encumbrance >= strength) {
+      console.log('Overencumbered!! Navigating to shop to sell treasure');
+      await autoSellTreasure(room_id, dispatch);
+      room_id = 1;
+    }
   }
 };
 
