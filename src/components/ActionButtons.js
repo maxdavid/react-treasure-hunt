@@ -3,8 +3,14 @@ import styled from 'styled-components';
 import { useStateValue } from '../hooks/useStateValue';
 
 import { sleep } from '../utility/randomWalk';
-import { warp, setCooldownLock, setCurrentAction } from '../actions';
-import { mining, snitching, itemFinder, darkWorld } from '../utility';
+import { warp, recall, setCooldownLock, setCurrentAction } from '../actions';
+import {
+  mining,
+  snitching,
+  itemFinder,
+  transmogrifyRoller,
+  darkWorld,
+} from '../utility';
 
 export const ActionButtons = props => {
   const [{ gameplay }, dispatch] = useStateValue();
@@ -53,12 +59,18 @@ export const ActionButtons = props => {
       >
         Go to chosen room
       </button> */}
-      {/* <button
+      <button
         disabled={!gameplay.abilities.includes('warp')}
         onClick={() => warpCooldown(dispatch)}
       >
         Warp
-      </button> */}
+      </button>
+      <button
+        disabled={!gameplay.abilities.includes('recall')}
+        onClick={() => recall(dispatch)}
+      >
+        Recall
+      </button>
       <button
         onClick={() =>
           itemFinder(
@@ -72,6 +84,18 @@ export const ActionButtons = props => {
         }
       >
         Item Finder
+      </button>
+      <button
+        onClick={() =>
+          transmogrifyRoller(
+            gameplay.room_id,
+            gameplay.strength - 11,
+            gameplay.speed - 9,
+            dispatch
+          )
+        }
+      >
+        Transmogrify Roller
       </button>
       <button
         onClick={() =>
